@@ -42,7 +42,7 @@ footer{
 }
 
 section.smin{
-  margin-top: 3%;
+  margin-top: 60px;
   height: 100%;
   width: 100%;
   background:white;
@@ -123,7 +123,7 @@ article.future{display:block;opacity:0;-moz-transition-duration: 0.5s;-webkit-tr
 }
 
 .encabezadoMax{
-  margin-top: 3%;
+  margin-top: 60px;
   display: inline-block;
   width: 95%;
 }
@@ -140,6 +140,8 @@ article.future{display:block;opacity:0;-moz-transition-duration: 0.5s;-webkit-tr
 }
 
 .date{
+  text-align: left;
+  width: 55%;
   float:left;
   font-family: 'Open Sans Condensed', 'Arial Narrow', serif;
   color: rgb(116, 114, 111);
