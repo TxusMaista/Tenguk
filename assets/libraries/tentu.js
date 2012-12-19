@@ -6,7 +6,7 @@ function exit(){
   b.disabled = false;
   var o = document.getElementById("buttons");
   o.style.display = "none";
-  
+
   var o = document.getElementsByClassName("bmax");
   o[0].setAttribute("class", "bmin");
   var o = document.getElementsByClassName("smax");
@@ -56,7 +56,7 @@ function max(n){
   };
 
   var o = document.getElementsByClassName("min");
-  
+
   for (var i = o.length - 1; i >= n; i--) {
     o[i].setAttribute("class", "max after");
   };
@@ -67,7 +67,7 @@ function max(n){
 
   var o = document.getElementsByClassName("max");
   o[n].setAttribute("class", "max present ani");
-  
+
   if(o.length == n+1){
     var b = document.getElementById("s");
     b.disabled = true;
@@ -156,5 +156,20 @@ function day(){
   var n = document.getElementById("d");
   n.style.display = "none";
   var d = document.getElementById("n");
+  d.style.display = "block";
+}
+
+function reg(){
+  var n = document.getElementById("l");
+  n.style.display = "none";
+  var d = document.getElementById("r");
+  d.style.display = "block";
+
+}
+
+function log(){
+  var n = document.getElementById("r");
+  n.style.display = "none";
+  var d = document.getElementById("l");
   d.style.display = "block";
 }

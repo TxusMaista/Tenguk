@@ -28,6 +28,23 @@
 }
 /*--------------GUKERE------------------------*/
 
+.add {
+
+height: 40px;
+width: 68px;
+margin: 0 auto;
+
+}
+.ju:hover {
+background: #878D95;
+color: white;
+}
+.ju:active {
+background: #878D95;
+color: black;
+
+}
+
 .night{
 	background: black;
 	color: white;

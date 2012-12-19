@@ -7,11 +7,72 @@
   <link rel="stylesheet" href="assets/stylesheets/style.css">
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/menu.css">
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/demo.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/form.css">
   <link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
   <script src="assets/libraries/tentu.js"></script>
   <body class="bmin">
 
+      <div id="l" class="menup">
+                <div id="wrapper">
+                        <div id="login" class="form">
+                            <form  action="mysuperscript.php" autocomplete="on">
+                                <h1>Log in</h1>
+                                <p>
+                                    <label for="username" class="uname" data-icon="u" >Email</label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="mymail@mail.com"/>
+                                </p>
+                                <p>
+                                    <label for="password" class="youpasswd" data-icon="p">Password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
+                                </p>
+                                <p class="keeplogin">
+                  <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                  <label for="loginkeeping">Keep me logged in</label>
+                </p>
+                                <p class="login button">
+                                    <input type="submit" value="Login" />
+                </p>
+                                <p class="change_link">
+                                  <span style="padding:8px;">Not a member yet ?</span>
+                  <a href="#toregister" onClick="reg()" class="to_register">Join us</a>
+                </p>
+                            </form>
+                        </div>
+                    </div>
+      </div>
+      <div id="r" class="menup" style="display:none">
+              <div id="wrapper">
+                        <div id="register" class="form">
+                            <form  action="mysuperscript.php" autocomplete="on">
+                                <h1> Sign up </h1>
+                                <p>
+                                    <label for="usernamesignup" class="uname" data-icon="u">Username</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                </p>
+                                <p>
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/>
+                                </p>
+                                <p>
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p>
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Confirm</label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p class="signin button">
+                  <input type="submit" value="Sign up"/>
+                </p>
+                                <p class="change_link">
+                  Already a member ?
+                  <a href="#tologin" onClick="log()" class="to_register"> Login </a>
+                </p>
+                            </form>
+                        </div>
+                    </div>
+      </div>
     <ul class="menu">
         <li class="item1"><a href="">Udaletako Berriak</a>
           <ul>
@@ -24,6 +85,7 @@
             <li class="subitem3">
               <span>Arrasate</span>
             </li>
+            <li id="udalb" class="ju"><div class="add"><span id="celal" class="icon">@</span></div></li>
           </ul>
         </li>
         <li class="item2"><a href="#">Udaletako Agenda</a>
@@ -37,6 +99,7 @@
             <li class="subitem3">
               <span>Arrasate</span>
             </li>
+            <li id="udala" class="ju"><div class="add"><span class="icon">@</span></div></li>
           </ul>
         </li>
         <li class="item3"><a href="#">Udaletako Kirol Agenda</a>
@@ -53,18 +116,31 @@
             <li class="subitem4">
               <span>Gatzaga</span>
             </li>
+            <li id="udalka" class="ju"><div class="add"><span class="icon">@</span></div></li>
           </ul>
         </li>
-        <li class="item4"><a href="#">Gaiak</a>
+        <li class="item4"><a href="#">Gaiak <span>14</span></a>
           <ul>
-            <li class="subitem1"><a href="#">Tecnologia</a></li>
-            <li class="subitem2"><a href="#">kultura</a></li>
-            <li class="subitem3"><a href="#">kirolak</a></li>
+            <li class="subitem1"><a href="#">Tecnologia<span>7</span></a></li>
+            <li class="subitem2"><a href="#">kultura <span>3</span></a></li>
+            <li class="subitem3"><a href="#">kirolak<span>4</span></a></li>
+            <li id="gaiak" class="ju"><div class="add"><span class="icon">@</span></div></li>
           </ul>
         </li>
       </ul>
 
-      <div class="chat"></div>
+      <ul class="gaiak">
+         <li class="subitem1">
+              <span>x</span>
+            </li>
+            <li class="subitem2">
+              <span>y</span>
+            </li>
+            <li class="subitem3">
+              <span>z</span>
+            </li>
+      </ul>
+
 
       <div id="right" class="shadow" style="z-index:0">
           <header>

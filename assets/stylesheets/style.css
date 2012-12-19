@@ -1,4 +1,7 @@
 
+body{
+  background: #F7F7F7;
+}
 body.bmin {
   /* Hide scrollbars */
   overflow-x: hidden;
@@ -22,8 +25,8 @@ header{
   width: 100%;
   position: absolute;
   top: 0px;
-  background:grey; 
-  height:40px; 
+  background:grey;
+  height:40px;
   color:white;
   text-align: center;
 }
@@ -32,17 +35,17 @@ footer{
   width: 100%;
   position: absolute;
   bottom: 0px;
-  background:grey; 
-  height:40px; 
+  background:grey;
+  height:40px;
   color:white;
   text-align: center;
 }
 
 section.smin{
-  margin-top: 3%; 
+  margin-top: 3%;
   height: 100%;
   width: 100%;
-  background:white; 
+  background:white;
   padding:2% 0px;
 }
 
@@ -50,7 +53,7 @@ section.smax{
   overflow: hidden;
   height: 100%;
   width: 33%;
-  color: rgb(51, 51, 51); 
+  color: rgb(51, 51, 51);
 }
 
 article.min{
@@ -59,9 +62,9 @@ article.min{
   overflow: hidden;
   vertical-align: top;
   display: inline-block;
-  background:white; 
-  width:320px; 
-  height:280px;  
+  background:white;
+  width:320px;
+  height:280px;
   margin:7px;
 }
 

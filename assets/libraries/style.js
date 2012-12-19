@@ -26,6 +26,19 @@ $(window).load(function(){
         }
     );
 
+    $('#udalb').toggle(
+        function() {
+            $('#right').animate({ left: 500 }, 'slow', function() {
+                $('#celal').html('<');
+            });
+        },
+        function() {
+            $('#right').animate({ left: 250 }, 'slow', function() {
+                $('#celal').html('@');
+            });
+        }
+    );
+
       $(function() {
 
       var menu_ul = $('.menu > li > ul'),
