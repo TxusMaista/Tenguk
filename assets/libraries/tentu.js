@@ -1,5 +1,10 @@
 function exit(){
 
+  var n = document.getElementById("d");
+  n.style.display = "none";
+  var d = document.getElementById("n");
+  d.style.display = "block";
+
   var b = document.getElementById("a");
   b.style.visibility = "visible";
   var b = document.getElementById("s");
