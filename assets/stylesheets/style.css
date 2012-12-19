@@ -39,7 +39,7 @@ footer{
 }
 
 section.smin{
-  margin-top: 3%; 
+  margin-top: 60px; 
   height: 100%;
   width: 100%;
   background:white; 
@@ -120,7 +120,7 @@ article.future{display:block;opacity:0;-moz-transition-duration: 0.5s;-webkit-tr
 }
 
 .encabezadoMax{
-  margin-top: 3%;
+  margin-top: 60px;
   display: inline-block;
   width: 95%;
 }

@@ -1,9 +1,9 @@
 function exit(){
 
   var b = document.getElementById("a");
-  b.disabled = false;
+  b.style.visibility = "visible";
   var b = document.getElementById("s");
-  b.disabled = false;
+  b.style.visibility = "visible";
   var o = document.getElementById("buttons");
   o.style.display = "none";
   
@@ -70,12 +70,12 @@ function max(n){
   
   if(o.length == n+1){
     var b = document.getElementById("s");
-    b.disabled = true;
+    b.style.visibility = "hidden";
   } else o[n+1].setAttribute("class", "max future");
 
   if(n == 0){
     var b = document.getElementById("a");
-    b.disabled = true;
+    b.style.visibility = "hidden";
   } else o[n-1].setAttribute("class", "max past");
 
   var o = document.getElementById("buttons");
@@ -86,7 +86,7 @@ function before(){
   var o = document.getElementsByClassName("future");
   if (o.length == 0) {
     var b = document.getElementById("s");
-    b.disabled = false;
+    b.style.visibility = "visible";
   } else o[0].setAttribute("class", "max after");
 
   var o = document.getElementsByClassName("present");
@@ -98,7 +98,7 @@ function before(){
   var o = document.getElementsByClassName("before");
   if (o.length == 0) {
     var b = document.getElementById("a");
-    b.disabled = true;
+    b.style.visibility = "hidden";
   } else {
   o[o.length - 1].setAttribute("class", "max past");
   }
@@ -110,7 +110,7 @@ function after(){
   var o = document.getElementsByClassName("past");
   if (o.length == 0) {
     var b = document.getElementById("a");
-    b.disabled = false;
+    b.style.visibility = "visible";
   } else o[0].setAttribute("class", "max before");
 
   var o = document.getElementsByClassName("present");
@@ -125,14 +125,14 @@ function after(){
       o[0].setAttribute("class", "max future");
     } else {
       var b = document.getElementById("s");
-      b.disabled = true;
+      b.style.visibility = "hidden";
     }
   } else {
     o[0].setAttribute("class", "max present");
     var o = document.getElementsByClassName("after");
     if(o.length == 0) {
       var b = document.getElementById("s");
-      b.disabled = true;
+      b.style.visibility = "hidden";
     } else {
       o[0].setAttribute("class", "max future");
     }
