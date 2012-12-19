@@ -137,6 +137,8 @@ article.future{display:block;opacity:0;-moz-transition-duration: 0.5s;-webkit-tr
 }
 
 .date{
+  text-align: left;
+  width: 55%;
   float:left;
   font-family: 'Open Sans Condensed', 'Arial Narrow', serif;
   color: rgb(116, 114, 111);
