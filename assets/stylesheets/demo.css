@@ -1,0 +1,145 @@
+/* @import url('normalize.css'); */
+/* General Demo Style */
+.clr{
+	clear: both;
+	padding: 0;
+	height: 0;
+	margin: 0;
+}
+.main-title{
+	position: absolute;
+	z-index: -1;
+	width: 50%;
+	padding: 20px 40px;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+}
+.main-title h1{
+	font-size: 45px;
+	line-height: 52px;
+	font-weight: 300;
+	color: #777;
+}
+.main-title h1 strong{
+	font-weight: 700;
+}
+.main-title p{
+	font-size: 18px;
+	color: #F86738;
+}
+/*--------------GUKERE------------------------*/
+
+.night{
+	background: black;
+	color: white;
+}
+.day{
+	background: white;
+	color: black;
+}
+.middle{
+	width: 150px;
+	margin: 0 auto;
+}
+
+.shadow {
+-moz-box-shadow: 0 0 20px black;
+-webkit-box-shadow: 0 0 20px black;
+box-shadow: 0 0 20px black;
+}
+
+nav a{
+	color:white;
+}
+.center{
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	left: 32px;
+	right: 32px;
+}
+.right {
+	float:right;
+
+}
+.left{
+	float: left;
+}
+
+@font-face {font-family:
+    'RaphaelIcons';
+    src:
+    url('raphaelicons-webfont.eot');
+    src:
+    local('☺'), url('raphaelicons-webfont.woff') format('woff'), url('raphaelicons-webfont.ttf') format('truetype'), url('raphaelicons-webfont.svgwebfontKOf9F4sx') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+	margin: 0px 15px 0px 15px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+    font-family: 'RaphaelIcons';
+    font-size: 2.5em;
+    position: relative;
+}
+
+
+header {
+    background-color: #616975;
+    background-image: -moz-linear-gradient(center top , #727A86, #505864);
+    border-bottom: 1px solid #33373D;
+    box-shadow: 0 1px 0 0 #878E98 inset;
+   	height: 2.75em;
+    line-height: 2.75em;
+    top: 0;
+}
+
+.header2 {
+	display:none;
+    background-color: #616975;
+    background-image: -moz-linear-gradient(center top , #727A86, #505864);
+    border-bottom: 1px solid #33373D;
+    box-shadow: 0 1px 0 0 #878E98 inset;
+   	height: 2.75em;
+    line-height: 2.75em;
+    top: 0;
+}
+/*header {
+	top: 0;
+	height: 44px;
+	line-height: 42px;
+    width:100%;
+    background-color:black;
+    color: #fff;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -2px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(255,255,255,0.1), inset 0 -1px 0 rgba(0,0,0,0.5);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -2px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}*/
+#menu, #right {
+    display:inline;
+}
+#right {
+    overflow-y:scroll;
+    width:100%;
+    background-color: #fff;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    -webkit-transition: margin-left 1s ease-in-out;
+    -moz-transition: margin-left 1s ease-in-out;
+    -o-transition: margin-left 1s ease-in-out;
+    -ms-transition: margin-left 1s ease-in-out;
+    transition: margin-left 1s ease-in-out;
+}
+
+#right.left {
+  margin-left: -250px;
+}
+#right.right {
+  margin-left: 0;
+}
+/*--------------GUKERE------------------------*/
+

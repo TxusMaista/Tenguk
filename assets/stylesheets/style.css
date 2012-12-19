@@ -1,0 +1,213 @@
+
+body.bmin {
+  /* Hide scrollbars */
+  overflow-x: hidden;
+  /* Use full body canvas */
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-family: Georgia, Serif;
+  font-size: 16px;
+}
+
+body.bmax{
+  margin:0px;
+  overflow: hidden;
+  width: 300%;
+}
+
+header{
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  background:grey; 
+  height:40px; 
+  color:white;
+  text-align: center;
+}
+
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background:grey; 
+  height:40px; 
+  color:white;
+  text-align: center;
+}
+
+section.smin{
+  margin-top: 3%; 
+  height: 100%;
+  width: 100%;
+  background:white; 
+  padding:2% 0px;
+}
+
+section.smax{
+  overflow: hidden;
+  height: 100%;
+  width: 33%;
+  color: rgb(51, 51, 51); 
+}
+
+article.min{
+  box-shadow: 8px 8px 3px #888;
+  border: solid 10px #000000;
+  overflow: hidden;
+  vertical-align: top;
+  display: inline-block;
+  background:white; 
+  width:320px; 
+  height:280px;  
+  margin:7px;
+}
+
+article.max{
+  padding: 0px;
+  overflow-y: scroll;
+  margin: 0px;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0px;
+}
+
+article.ani{
+  -webkit-animation-name: cssAnimation;
+  -webkit-animation-duration:1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: cssAnimation;
+  animation-duration:1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cssAnimation {
+from {
+-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0,-100%);
+-transform: rotate(0deg) scale(1) skew(0deg) translate(0,-100%);
+}
+to {
+-webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0,0);
+-transform: rotate(0deg) scale(1) skew(0deg) translate(0,0);
+}
+}
+
+article.after{display: none;}
+article.before{display: none;}
+
+article.past{display:block;opacity:0;-moz-transition-duration: 0.5s;-webkit-transition-duration: 0.5s;-webkit-transform:translate(-100%, 0);-moz-transform:translate(-100%, 0);-ms-transform:translate(-100%, 0);-o-transform:translate(-100%, 0);transform:translate(-100%, 0);}
+article.present{display:block;-webkit-transition-duration: 0.5s;-moz-transition-duration: 0.5s;}
+article.future{display:block;opacity:0;-moz-transition-duration: 0.5s;-webkit-transition-duration: 0.5s;-webkit-transform:translate(100%, 0);-moz-transform:translate(100%, 0);-ms-transform:translate(100%, 0);-o-transform:translate(100%, 0);transform:translate(100%, 0);}
+
+.encabezado h1{
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+  top: -89px;
+  line-height: 30px;
+  height: 60px;
+  font-size: 15px;
+  color: white;
+  background: rgba(0,0,0,0.7);
+}
+
+.encabezadoMax{
+  margin-top: 3%;
+  display: inline-block;
+  width: 95%;
+}
+
+.encabezadoMax h1{
+  min-width: 320px;
+  float:left;
+  text-align: left;
+  font-family: 'Open Sans Condensed', 'Arial Narrow', serif;
+  width: 50%;
+  font-size: 30px;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.date{
+  float:left;
+  font-family: 'Open Sans Condensed', 'Arial Narrow', serif;
+  color: rgb(116, 114, 111);
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0px;
+}
+
+.encabezadoMax img{
+  min-width: 320px;
+  float:left;
+  margin: 4% 2% 2% 2%;
+  width: 40%;
+}
+
+.texto{
+  display: none;
+  font-size: 20px;
+  width: 93%;
+  margin: 0 0 5% 0;
+  font-style: justify;
+  font-family: Georgia;
+}
+
+.texto a{
+  text-decoration: none;
+  color: rgb(116, 114, 111);
+}
+
+.texto img{
+  width: 60%;
+  min-width: 320px;
+  margin: 2%;
+}
+
+.texto h2{
+  margin: 3% 1%;
+  font-size: 30px;
+  text-align: left;
+  font-family: 'Open Sans Condensed', 'Arial Narrow', serif;
+}
+
+
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: normal;
+  margin: 14px 0;
+  color: #666;
+}
+
+p {
+  margin: 10px;
+  text-align: justify;
+}
+
+hr {
+  margin: 24px 0;
+  border: none;
+  padding: 0;
+  height: 24px;
+  background: url('../img/horizontal-rule.png') 50% 50% no-repeat;
+}
+
+.night{
+  background: black;
+  color: white;
+}
+.day{
+  background: white;
+  color: rgb(51, 51, 51);
+}

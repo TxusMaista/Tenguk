@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tentuu</title>
+  </head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="assets/stylesheets/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/menu.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/demo.css">
+  <link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+  <script src="assets/libraries/tentu.js"></script>
+  <body class="bmin">
+
+    <ul class="menu">
+        <li class="item1"><a href="">Udaletako Berriak</a>
+          <ul>
+            <li class="subitem1">
+              <span>Aretxabaleta</span>
+            </li>
+            <li class="subitem2">
+              <span>Eskoriatza</span>
+            </li>
+            <li class="subitem3">
+              <span>Arrasate</span>
+            </li>
+          </ul>
+        </li>
+        <li class="item2"><a href="#">Udaletako Agenda</a>
+          <ul>
+            <li class="subitem1">
+              <span>Aretxabaleta</span>
+            </li>
+            <li class="subitem2">
+              <span>Eskoriatza</span>
+            </li>
+            <li class="subitem3">
+              <span>Arrasate</span>
+            </li>
+          </ul>
+        </li>
+        <li class="item3"><a href="#">Udaletako Kirol Agenda</a>
+          <ul>
+            <li class="subitem1">
+              <span>Aretxabaleta</span>
+            </li>
+            <li class="subitem2">
+              <span>Eskoriatza</span>
+            </li>
+            <li class="subitem3">
+              <span>Arrasate</span>
+            </li>
+            <li class="subitem4">
+              <span>Gatzaga</span>
+            </li>
+          </ul>
+        </li>
+        <li class="item4"><a href="#">Gaiak</a>
+          <ul>
+            <li class="subitem1"><a href="#">Tecnologia</a></li>
+            <li class="subitem2"><a href="#">kultura</a></li>
+            <li class="subitem3"><a href="#">kirolak</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="chat"></div>
+
+      <div id="right" class="shadow" style="z-index:0">
+          <header>
+              <nav  class="icon left"><a id="opt" href="#">Ì</a></nav>
+              <nav class="icon right"><a id="per" href="#">L</a></nav>
+              <div class="center" style="color:white;font-family: 'Sonsie One', cursive;font-size:32px;dispaly:inline;">tentuu</div>
+          </header>
+      <div>
+      <section class="smin">
+          <center>
+            <div id="noticias"></div>
+          </center>
+      </section>
+
+      <div id="buttons" class="header2" style="display:none; position:absolute; bottom:0px; width:100%;">
+          <div class="middle">
+            <nav id="a" onclick="before();" class="icon left"><a id="per" href="#"><</a></nav>
+                <nav id="x" onclick="exit();" class="icon left"><a id="opt" href="#">S</a></nav>
+                <nav id="s" onclick="after();" class="icon left"><a id="per" href="#">=</a></nav>
+          </div>
+          <nav id="n" onclick="night();" class="icon right" ><a id="per" href="#">i</a></nav>
+          <nav id="d" onclick="day();" class="icon right" style="display:none;"><a id="per" href="#">j</a></nav>
+      </div>
+
+    </div>
+
+    <!-- <footer>Footer</footer> -->
+
+    <script src="assets/libraries/jquery-1.4.4.min.js"></script>
+    <script src="assets/libraries/style.js"></script>
+    <script src="assets/libraries/mustache.js"></script>
+    <script src="data/templates.js"></script>
+    <script src="data/services.js"></script>
+
+  </body>
+</html>
