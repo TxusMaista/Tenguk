@@ -4,6 +4,7 @@
     <title>Tentuu</title>
   </head>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" href="assets/stylesheets/stylel.css">
   <link rel="stylesheet" href="assets/stylesheets/style.css">
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/menu.css">
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/demo.css">
@@ -11,6 +12,7 @@
   <link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
   <script src="assets/libraries/tentu.js"></script>
+  <script src="assets/libraries/sonic.js"></script>
   <body class="bmin">
 
       <div id="l" class="menup">
@@ -166,6 +168,146 @@
       </div>
 
     </div>
+
+          <style type="text/css">
+
+      #splash {
+        width: 100%;
+        height: 100%;
+        background: green;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index:5;
+        -webkit-animation: proba 5s ; /* Safari 4+ */
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation:    proba 5s ; /* Fx 5+ */
+        -o-animation:      proba 5s ; /* Opera 12+ */
+        animation:         proba 5s ; /* IE 10+ */
+      }
+
+      @-webkit-keyframes proba {
+        0%   { opacity: 1; }
+        70%  { opacity: 1;}
+        100% { opacity: 0; }
+      }
+      @-moz-keyframes proba {
+        0%   { opacity: 1; }
+        70%  { opacity: 1;}
+        100% { opacity: 0; }
+      }
+      @-o-keyframes proba {
+        0%   { opacity: 1; }
+        70%  { opacity: 1;}
+        100% { opacity: 0; }
+      }
+      @keyframes proba {
+        0%   { opacity: 1; }
+        70%  { opacity: 1;}
+        100% { opacity: 0; }
+      }
+
+    </style>
+  <div id="splash" class="hello" style="position: absolute; top: 0; left: 0;width: 100%; height: 100%;background:black;">
+        <div id="container">
+        <div id="izena">
+          <div id="inner">
+            <h1 style="z-index: 5;color:white;font-family: 'Sonsie One', cursive;font-size:75px;z-index:5;">Tentuu</h1>
+            <div id="in"></div>
+          </div>
+          </div>
+        </div>
+
+      <script>
+       var myVar=setInterval(function(){myTimer()},5000);
+
+       function myTimer()
+       {
+       $('.hello').remove();
+       }
+      </script>
+
+    </div>
+
+      <script>
+          var loaders = [
+
+
+        {
+
+          width: 100,
+          height: 100,
+
+          stepsPerFrame: 1,
+          trailLength: 1,
+          pointDistance: .025,
+
+          strokeColor: '#05E2FF',
+
+          fps: 20,
+
+          setup: function() {
+            this._.lineWidth = 2;
+          },
+          step: function(point, index) {
+
+            var cx = this.padding + 50,
+              cy = this.padding + 50,
+              _ = this._,
+              angle = (Math.PI/180) * (point.progress * 360);
+
+            this._.globalAlpha = Math.max(.5, this.alpha);
+
+            _.beginPath();
+            _.moveTo(point.x, point.y);
+            _.lineTo(
+              (Math.cos(angle) * 35) + cx,
+              (Math.sin(angle) * 35) + cy
+            );
+            _.closePath();
+            _.stroke();
+
+            _.beginPath();
+            _.moveTo(
+              (Math.cos(-angle) * 32) + cx,
+              (Math.sin(-angle) * 32) + cy
+            );
+            _.lineTo(
+              (Math.cos(-angle) * 27) + cx,
+              (Math.sin(-angle) * 27) + cy
+            );
+            _.closePath();
+            _.stroke();
+
+          },
+          path: [
+            ['arc', 50, 50, 40, 0, 360]
+          ]
+        },
+
+      ];
+
+      var d, a, container = document.getElementById('in');
+
+
+      for (var i = -1, l = loaders.length; ++i < l;) {
+
+        d = document.createElement('div');
+        d.className = 'l';
+
+        a = new Sonic(loaders[i]);
+
+        d.appendChild(a.canvas);
+        container.appendChild(d);
+
+        a.canvas.style.marginTop = (150 - a.fullHeight) / 2 + 'px';
+
+
+        a.play();
+
+      }
+
+      </script>
 
     <!-- <footer>Footer</footer> -->
 
