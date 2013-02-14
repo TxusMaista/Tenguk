@@ -3,7 +3,7 @@ Services = (function() {
 	var Category = function() {
         var section = {item:[]};
 
-        var imag = "./libro.jpg";
+        var imag = "./images/libro.jpg";
         imag = "<img class='portada bottom rounded' class='bottom' src='"+imag+"'/>";
 
         section.item.push({
@@ -55,7 +55,7 @@ Services = (function() {
             date: "",
             img: ""
         });
-            
+
         var html = Mustache.to_html(Template.categoria(), section);
         $('#noticias').html(html);
     };
@@ -76,12 +76,12 @@ Services = (function() {
           break;
         }
 
-        var img = "./libro.jpg";
+        var img = "./images/libro.jpg";
         imag = "<img width='100%' class='imag rounded imgY4' src='"+img+"'/>";
         imagx = "<img width='100%' src='"+img+"'/>";
-        var img = "./futbol.jpg";
+        var img = ".images//futbol.jpg";
         imag2 = "<img width='100%' class='imag rounded imgY2' src='"+img+"'/>";
-        var img = "./tren.jpeg";
+        var img = ".images//tren.jpeg";
         imag3 = "<img width='100%' class='imag rounded imgY2' src='"+img+"'/>";
 
         section.item.push({
@@ -202,16 +202,16 @@ Services = (function() {
             var i = Math.min(i,b4);}
             else
             if ((b2 == -1) && (b == -1))
-            if(b4 != -1) var i = b4; else {  
+            if(b4 != -1) var i = b4; else {
             var i = h2+6;
             var noimag = 1;
             }
             else
             if(b4 != -1) {
                 var i = Math.max(b,b2);
-                var i = Math.min(i,b4); 
+                var i = Math.min(i,b4);
             }
-            else  
+            else
             var i = Math.max(b,b2);
 
             var imag = img.substring(h2+5, i+4);
@@ -250,7 +250,7 @@ Services = (function() {
             var h3 = img.indexOf('<iframe"');
             var b3 = img.indexOf('frameborder');
         }
-        
+
         imag = "<img src='"+imags[0]+"' width='320px' height='280px' />";
 
         return imag;
@@ -268,7 +268,7 @@ Services = (function() {
         var i = Math.max(b,b2);
 
         //var txt = text.substring(i+6);
-        var txt = text.substring(i+6,b3); 
+        var txt = text.substring(i+6,b3);
         //alert(txt);
 
         return txt;
@@ -279,6 +279,6 @@ Services = (function() {
     return {
         template: function(o){ Templating(o);},
     }
-    
+
 
 }).call(this);
