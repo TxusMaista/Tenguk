@@ -1,0 +1,33 @@
+{
+  "name": "Tentu",
+  "description": "Parte cliente de la Revista digital personalizada Tentu",
+  "version": "0.1.0",
+  "homepage": "www.guekere.com/tentu",
+  "author": {
+    "name": "Gukere Team",
+    "email": "contacto@gukere.com",
+    "url": "www.gukere.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TxusMaista/Tenguk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TxusMaista/Tenguk/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/TxusMaista/Tenguk/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index.html",
+
+  "scripts": {
+    "test": "grunt"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.17"
+  },
+  "keywords": []
+}
