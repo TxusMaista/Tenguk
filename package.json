@@ -21,13 +21,10 @@
       "url": "https://github.com/TxusMaista/Tenguk/master/LICENSE-MIT"
     }
   ],
-  "main": "index.html",
 
-  "scripts": {
-    "test": "grunt"
+  "dependencies": {
+    "grunt-css":   ">0.0.0"
   },
-  "devDependencies": {
-    "grunt": "~0.3.17"
-  },
+
   "keywords": []
 }
