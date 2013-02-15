@@ -13,6 +13,9 @@ only screen and (max-device-width : 1050px){
   }
   .category {width: 48%;}
   .noticia {width: 48%;}
+  .logo{
+  width: 450px;
+}
 }
 
 @media only screen and (max-width : 660px),
@@ -31,5 +34,9 @@ only screen and (max-device-width : 660px){
   .noticia {width: 98%;font-size: 22px;}
   .doble{height: 350px;}
   .portada{height: 250px;border-radius:15px;
+}
+
+.logo{
+  width: 350px;
 }
 }
