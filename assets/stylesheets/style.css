@@ -28,7 +28,6 @@ section{
 
 input{
   border: 2px solid #504f4f;
-  margin-right: 20px;
   font-size: 16px;
 }
 
@@ -48,10 +47,10 @@ footer{
 ::-webkit-input-placeholder { font-style: italic; }
 
 .boton{
+  display: inline-block;
   background-color: #e20079;
   color:white;
   padding: 7px;
-  margin-left: 10px;
   border-bottom: 1px solid #b50162;
   border-right: 1px solid #b50162;
 }

@@ -3,8 +3,6 @@
   width:85%;
   height: 70%;
   position: fixed;
-  top: 15%;
-  left: 8%;
   text-align:center;
   margin:0 auto;
   font-size: 20px;
@@ -12,6 +10,10 @@
 
 .logo{
   width: 700px;
+}
+
+.sarrera{
+  line-height: 30px;
 }
 
 #input{
