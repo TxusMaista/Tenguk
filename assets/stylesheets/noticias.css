@@ -3,6 +3,10 @@
   display:inline;
 }
 
+#noticias{
+  margin-bottom: 44px;
+}
+
 .category{
   float: left;
   position: relative;
