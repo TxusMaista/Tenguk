@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Aldizkari Elektronikoa</title>
+  </head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="description" content="Aldizkari Elektronikoa"/>
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+<!-- Development mode -->
+  <link rel="stylesheet" href="assets/stylesheets/login.css">
+  <link rel="stylesheet" href="assets/stylesheets/mediaQuery.css">
+  <link rel="stylesheet" href="assets/stylesheets/noticias.css">
+  <link rel="stylesheet" href="assets/stylesheets/style.css">
+<!-- Production mode
+  <link rel="stylesheet" href="src/tentu.css">
+-->
+  <body>
+
+    <section id="log">
+      <div id="login">
+        <img class="logo" src="./assets/images/logo.png"/>
+        <div id="input">
+            <input class="rounded sarrera" placeholder="Erabiltzailea" type="text"/>
+            <input class="rounded sarrera" placeholder="Pasahitza" type="password"/>
+            <div onclick="login();" class="boton rounded">SARTU</div>
+
+          <div style="margin-top:30px;">
+            <div id="regis">Oraindik ez zara Tentu?<br/>Izena edo pasahitza ahaztu dituzu?</div>
+            <span class="boton rounded">ERREGISTRATU</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="not" style="display:none;">
+      <div id="noticias"></div>
+      <footer>Tentu</footer>
+    </section>
+
+    <script src="assets/libraries/jquery-1.4.4.min.js"></script>
+    <script src="assets/libraries/mustache.js"></script>
+    <script src="assets/libraries/jquery.masonry.min.js"></script>
+<!-- Development mode -->
+    <script src="assets/data/events.js"></script>
+    <script src="assets/data/templates.js"></script>
+    <script src="assets/data/services.js"></script>
+<!-- Production mode
+    <script src="src/tentu.js"></script>
+-->
+  </body>
+</html>

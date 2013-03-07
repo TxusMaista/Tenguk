@@ -1,7 +1,3 @@
-/* Tentu v0.1.0 - 2013/2/15
-   www.guekere.com/tentu
-   Copyright (c) 2013 Gukere Team - Licensed  */
-
 
 html{
   /* Hide scrollbars */
@@ -27,12 +23,10 @@ section{
   margin-top:1.5%;
   width: 100%;
   height: 100%;
-  padding-bottom: 44px;
 }
 
 input{
   border: 2px solid #504f4f;
-  margin-right: 20px;
   font-size: 16px;
 }
 
@@ -52,10 +46,10 @@ footer{
 ::-webkit-input-placeholder { font-style: italic; }
 
 .boton{
+  display: inline-block;
   background-color: #e20079;
   color:white;
   padding: 7px;
-  margin-left: 10px;
   border-bottom: 1px solid #b50162;
   border-right: 1px solid #b50162;
 }
@@ -82,13 +76,17 @@ footer{
   display:inline;
 }
 
+#noticias{
+  margin-bottom: 44px;
+}
+
 .category{
   float: left;
   position: relative;
   vertical-align: top;
   overflow: hidden;
   display: inline-block;
-  
+
   min-width: 300px;
   width: 31.3%;
   min-height: 310px;
@@ -106,7 +104,7 @@ footer{
   position: relative;
   vertical-align: top;
   overflow: hidden;
-  
+
   min-width: 288px;
   width: 23%;
   min-height: 140px;
@@ -137,9 +135,6 @@ footer{
   display: none;
   width: 100%;
   height: 100%;
-  -moz-column-count:3; /* Firefox */
-  -webkit-column-count:3; /* Safari and Chrome */
-  column-count:3;
 }
 
 .desc{
@@ -162,8 +157,6 @@ footer{
   width:85%;
   height: 70%;
   position: fixed;
-  top: 15%;
-  left: 8%;
   text-align:center;
   margin:0 auto;
   font-size: 20px;
@@ -171,6 +164,10 @@ footer{
 
 .logo{
   width: 700px;
+}
+
+.sarrera{
+  line-height: 30px;
 }
 
 #input{
@@ -184,9 +181,24 @@ footer{
   vertical-align:middle;
 }
 
-@media only screen and (max-width : 1255px),
-only screen and (max-device-width : 1255px){
+@media only screen and (max-width : 1440px),
+only screen and (max-device-width : 1440px){
   .noticia {width: 48%;}
+  .boton{
+    margin-left: 15px;
+  }
+  #login{
+  left: 8%;
+  top: 12%;
+  }
+  input{
+  margin-right: 20px;
+  }
+  .texto {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  }
 }
 
 @media only screen and (max-width : 1050px),
@@ -200,7 +212,22 @@ only screen and (max-device-width : 1050px){
   .noticia {width: 48%;}
   .logo{
   width: 450px;
-}
+  }
+  .boton{
+    margin-left: 15px;
+  }
+  #login{
+  left: 8%;
+  top: 12%;
+  }
+  input{
+  margin-right: 20px;
+  }
+  .texto {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  }
 }
 
 @media only screen and (max-width : 660px),
@@ -220,8 +247,32 @@ only screen and (max-device-width : 660px){
   .doble{height: 350px;}
   .portada{height: 250px;border-radius:15px;
 }
-
+#login{
+  margin: 0 auto;
+  position: relative;
+  left: 0%;
+  top: 2%;
+  }
 .logo{
-  width: 350px;
+  width: 280px;
 }
+
+.boton{
+  width: 250px;
+  margin-left: 0;
+}
+.sarrera{
+  width: 250px;
+}
+input{
+  margin-right: 0px;
+}
+html{min-height: 500px;}
+#regis {font-size: 19px;}
+.texto {
+-moz-column-count: 1;
+-webkit-column-count: 1;
+column-count: 1;
+}
+
 }

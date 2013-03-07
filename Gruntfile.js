@@ -38,7 +38,7 @@ module.exports = function(grunt) {
               'assets/data/services.js',
               'assets/data/events.js'
         ],
-        dest: 'src/<%=meta.file%>.js'
+        dest: 'src/tentu/<%=meta.file%>.js'
       },
       css: {
         src: ['<banner>',
@@ -47,21 +47,48 @@ module.exports = function(grunt) {
               'assets/stylesheets/login.css',
               'assets/stylesheets/mediaQuery.css'
         ],
-        dest: 'src/<%=meta.file%>.css'
+        dest: 'src/tentu/<%=meta.file%>.css'
       }
+    },
+
+    copy: {
+      main: {
+        files: [
+          {src: ['index.html'], dest: 'src/'},
+          {expand: true, cwd: 'assets/images/', src: ['*'], dest: 'src/images'} // makes all src relative to cwd
+        ]
+      }
+    },
+
+    jsdoc : {
+        dist : {
+            src: ['src/tentu/tentu.js'],
+            options: {
+                destination: 'doc'
+            }
+        }
     },
 
     min: {
       js: {
-        src: 'src/<%=meta.file%>.js',
-        dest: 'src/<%=meta.file%>.min.js'
+        src: 'src/tentu/<%=meta.file%>.js',
+        dest: 'src/tentu/<%=meta.file%>.min.js'
+      }
+    },
+
+    uglify: {
+      my_target: {
+
+        files: {
+          'src/tentu/<%=meta.file%>.min.js': ['src/tentu/<%=meta.file%>.js']
+        }
       }
     },
 
     cssmin: {
       css:{
-        src: 'src/<%=meta.file%>.css',
-        dest: 'src/<%=meta.file%>.min.css'
+        src: 'src/tentu/<%=meta.file%>.css',
+        dest: 'src/tentu/<%=meta.file%>.min.css'
       }
     },
 
@@ -72,9 +99,13 @@ module.exports = function(grunt) {
 
   });
 
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-jsdoc');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-css');
 
   // Default task.
-  grunt.registerTask('default', 'concat:js concat:css min');
+  grunt.registerTask('default', ['copy', 'concat', 'jsdoc', 'cssmin', 'uglify']);
 
 };

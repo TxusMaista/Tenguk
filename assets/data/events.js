@@ -1,11 +1,18 @@
+/**
+ * Funcion de logeo
+ * @namespace Login
+ */
+
 function login(){
   document.getElementById("log").style.display = "none";
   document.getElementById("not").style.display = "inline";
   $('#noticias').masonry({
-    itemSelector: '.category',
+    itemSelector: '.category'
   });
 }
 
+
+/** This is a description of the exit function. */
 function exit(){
 
   var n = document.getElementById("d");
@@ -62,7 +69,7 @@ function max(n){
 
   var o = document.getElementsByClassName("title");
   o[n].style.display = "block";
-  
+
   var o = document.getElementsByClassName("noticia");
   for (var i = o.length - 1; i > n; i--) {
     o[i].style.display = "none";
