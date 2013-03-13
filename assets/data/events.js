@@ -1,8 +1,9 @@
 function login(){
   document.getElementById("log").style.display = "none";
-  document.getElementById("not").style.display = "inline";
+  document.getElementById("not").style.display = "inline-block";
   $('#noticias').masonry({
-    itemSelector: '.category',
+    isFitWidth: true,
+    itemSelector: '.category'
   });
 }
 
@@ -45,6 +46,7 @@ function exit(){
 }
 
 function max(n){
+  
   var o = document.getElementsByClassName("catHeader");
   o[n].style.display = "none";
   var o = document.getElementsByClassName("catHeaderMin");
@@ -86,7 +88,11 @@ function max(n){
   o[n].style.width = "98%";
 
   var o = document.getElementById("noticias");
-  o.style.height = "100%";
+  o.style.paddingBottom = "44px";
+  o.style.position = "absolute";
+  o.style.top = "0px";
+  o.style.height = "88%";
+
 
 }
 

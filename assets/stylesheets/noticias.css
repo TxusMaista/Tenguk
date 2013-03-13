@@ -4,7 +4,9 @@
 }
 
 #noticias{
-  margin-bottom: 44px;
+  padding-bottom: 44px;
+  width: 95%;
+  display: inline-block;
 }
 
 .category{
@@ -12,11 +14,10 @@
   position: relative;
   vertical-align: top;
   overflow: hidden;
-  display: inline-block;
 
   min-width: 300px;
   width: 31.3%;
-  min-height: 310px;
+  min-height: 320px;
 
   margin:10px 1%;
   color:black;
@@ -32,18 +33,21 @@
   vertical-align: top;
   overflow: hidden;
 
-  min-width: 288px;
-  width: 23%;
-  min-height: 140px;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ebebeb;
+  
+  min-width: 270px;
+  width: 5.7%;
 
-  margin:10px 1%;
+  margin: 0.5% 0.5%;
   color:black;
   text-align:left;
   font-size: 18px;
 }
 
-.catHeaderMin{width:100%;margin:0;}
-.catHeaderMin h1{padding:5px 0px;margin:0px 15px;color: white;font-size:20px;text-align:left;text-shadow:2px 5px 2px rgba(0, 0, 0, 0.3);}
+.catHeaderMin{width:100%;margin:0;height:10px;}
+.catHeaderMin h1{display:none;padding:5px 0px;margin:0px 15px;color: white;font-size:20px;text-align:left;text-shadow:2px 5px 2px rgba(0, 0, 0, 0.3);}
 
 .portada{
   width: 100%;
@@ -71,10 +75,10 @@
 .catHeader{width:98%;margin:0px 1%;}
 .catHeader h1{padding:5px 0px;margin:5px 15px;color: white;font-size:40px;text-align:left;text-shadow:2px 5px 2px rgba(0, 0, 0, 0.3);}
 
-.doble{height: 640px;}
+.doble{height: 660px;}
 
-.x2{width: 48%;font-size: 22px;}
-.y2{height: 280px}
-.y4{height: 580px}
+.x2{width: 572px;font-size: 22px;}
+.y2{height: 273px}
+.y4{height: 579px}
 .imgY2{height: 180px}
 .imgY4{height: 480px}
