@@ -38,6 +38,7 @@ input{
 }
 
 footer{
+  display: none;
   position: fixed;
   bottom: 0px;
   height: 44px;

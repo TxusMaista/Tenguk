@@ -8,7 +8,7 @@ Services = (function() {
 
         section.item.push({
             clase:"category gorria doble rounded",
-            onclick:"Services.template(0);",
+            onclick:"changeSec(0)",
             text: "",
             author: "",
             title: "Nabarmen",
@@ -18,7 +18,7 @@ Services = (function() {
 
         section.item.push({
             clase:"category berdea rounded",
-            onclick:"Services.template(1);",
+            onclick:"changeSec(1);",
             text: "<ul><li>Herriko agenda</li><li>Kirolak</li></ul>",
             author: "",
             title: "Agenda",
@@ -28,7 +28,7 @@ Services = (function() {
 
         section.item.push({
             clase:"category horia rounded",
-            onclick:"",
+            onclick:"changeSec(2)",
             text: "<ul><li>Herriz herriko berriak</li><li>Administrazioaren berriak</li></ul>",
             author: "",
             title: "Gertukoak",
@@ -38,7 +38,7 @@ Services = (function() {
 
         section.item.push({
             clase:"category urdina rounded",
-            onclick:"",
+            onclick:"changeSec(3)",
             text: "",
             author: "",
             title: "Zaletasunak",
@@ -48,7 +48,7 @@ Services = (function() {
 
         section.item.push({
             clase:"category grisa rounded",
-            onclick:"",
+            onclick:"changeSec(4)",
             text: "",
             author: "",
             title: "Publi",
@@ -57,7 +57,7 @@ Services = (function() {
         });
 
         var html = Mustache.to_html(Template.categoria(), section);
-        $('#noticias').html(html);
+        $('#categorias').html(html);
     };
 
     var Templating = function(o) {
