@@ -411,6 +411,7 @@ Services = (function() {
 
 
         var html = Mustache.to_html(Template.noticia(), section);
+        $('#not').prepend(header);
         $('#noticias').html(html);
 
         document.getElementsByTagName("body")[0].style.backgroundColor = "#f4f5f5";
