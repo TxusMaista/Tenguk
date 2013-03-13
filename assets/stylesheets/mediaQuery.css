@@ -1,7 +1,13 @@
 
 @media only screen and (max-width : 1440px),
 only screen and (max-device-width : 1440px){
+<<<<<<< HEAD
 
+=======
+  .category {width: 31.3%;}
+  .noticias{width: 95%;}
+  .noticia{width: 21.5%;}
+>>>>>>> 49a0ae01a9f7c6bfed20d0e25dda92ee82e9f32f
   .boton{
     margin-left: 15px;
   }
@@ -27,7 +33,7 @@ only screen and (max-device-width : 1050px){
   column-count:2;
   }
   .category {width: 48%;}
-  .noticia {width: 48%;}
+  .noticia {width: 46%;}
   .logo{
   width: 450px;
   }
@@ -61,7 +67,8 @@ only screen and (max-device-width : 660px){
   .imgY4{height: 240px}
   .y4{height: 340px}
   .category {width: 98%;font-size: 22px;}
-  .noticia {width: 98%;font-size: 22px;}
+  .noticias{width: 100%;}
+  .noticia {width: 94%;font-size: 22px;}
   .doble{height: 350px;}
   .portada{height: 250px;border-radius:15px;
 }

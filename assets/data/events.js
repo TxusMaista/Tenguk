@@ -19,6 +19,7 @@
 
 function login(){
   document.getElementById("log").style.display = "none";
+<<<<<<< HEAD
   document.getElementById("not").style.display = "inline";
   // $('#noticias').masonry({
   //   itemSelector: '.category'
@@ -27,6 +28,13 @@ function login(){
 
 function home(){
   Services.category();
+=======
+  document.getElementById("not").style.display = "inline-block";
+  $('#noticias').masonry({
+    isFitWidth: true,
+    itemSelector: '.category'
+  });
+>>>>>>> 49a0ae01a9f7c6bfed20d0e25dda92ee82e9f32f
 }
 
 
@@ -83,6 +91,7 @@ function max(n){
 
 }
 
+<<<<<<< HEAD
 function mas(x){
 
   var i = 0;
@@ -123,6 +132,15 @@ function mas(x){
   txt[0].style.display = "block";
   var tit = x.getElementsByClassName("title");
   tit[0].style.display = "block";
+=======
+function max(n){
+  
+  var o = document.getElementsByClassName("catHeader");
+  o[n].style.display = "none";
+  var o = document.getElementsByClassName("catHeaderMin");
+  o[n].style.top = "0px";
+  o[n].style.height = "33px";
+>>>>>>> 49a0ae01a9f7c6bfed20d0e25dda92ee82e9f32f
 
   // var y2 = x.getElementsByClassName("y2");
   // if( y2.length == 0) {
@@ -148,6 +166,15 @@ function mas(x){
   var back = document.getElementById("back");
   back.style.display= 'block';
 
+<<<<<<< HEAD
+=======
+  var o = document.getElementById("noticias");
+  o.style.paddingBottom = "44px";
+  o.style.position = "absolute";
+  o.style.top = "0px";
+  o.style.height = "88%";
+
+>>>>>>> 49a0ae01a9f7c6bfed20d0e25dda92ee82e9f32f
 
 }
 

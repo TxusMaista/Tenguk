@@ -84,13 +84,40 @@ Services = (function() {
         var img = "./assets/images//tren.jpeg";
         imag3 = "<img width='100%' class='imag rounded imgY2' src='"+img+"'/>";
 
+
+        section.item.push({
+            clase:"noticia y2",
+            onclick:"",
+            cat:"Kirol agenda",
+            catclass:"catHeaderMin berdea rounded",
+            desc: "1> ARRASATE | Asteburuan jokatuko da Debagoieganko XX. Futbito txapelketa.",
+            text: "",
+            author: "",
+            title: "",
+            date: "",
+            img: imag2
+        });
+
+        section.item.push({
+            clase:"noticia",
+            onclick:"",
+            cat:"Agenda",
+            catclass:"catHeaderMin berdea rounded",
+            desc: "3BERGARA | Asteburuan jokatuko da Debagoieganko XX. Futbito txapelketa.",
+            text: "",
+            author: "",
+            title: "",
+            date: "",
+            img: ""
+        });
+
         section.item.push({
             id:'1',
             clase:"noticia x2 y4",
             onclick:"mas(this)",
             cat:"Zaletasunak",
-            catclass:"catHeaderMin urdina rounded withImg",
-            desc: "> GASTRONOMIA | Abian da Jakiberri ideia-Lehiaketa, 'Healthy Basque Fast Food' produktu berritzaileak sortzeko asmoz.",
+            catclass:"catHeaderMin urdina rounded",
+            desc: "2> GASTRONOMIA | Abian da Jakiberri ideia-Lehiaketa, 'Healthy Basque Fast Food' produktu berritzaileak sortzeko asmoz.",
             text: imagx + "<p>Jakiberri Proiektua, 'Healthy Fast Food' tankerako arin prestatzeko euskal janari berri, naturala, osa- suntsua, anitza eta nutritiboa izango den produktuak lortzeko ikerkuntza proiektua da.</p><p>Jakiberri Proiektuaren asmoa euskal jatorrizko 'Healthy Fast Food' sukal- daritza mota berritzailea sortzea da, Obama Presidentearen legediarekin bat letorkeena.</p><p>Jakiberri Proiektua ISEAk (Corporacion MONDRAGON), JAKIONek eta AZARO FUNDAZIOAk bultzatutakoa da, horre- tarako BASQUE CULINARY CENTER eta HAZI laguntza dutelarik.</p><p>Nahiz eta gaur egun 'Healthy Bas- que Fast Food' eskaintzarik ez egon, Jakiberri Proiektuaren helburua da, gure sormen potentziala, ezagutza, tradizioa eta gure gastronomiako giza kolektiboa uztartzea da eta horrela elikadura mota berria, naturala, osasuntsua, anitza eta nutritiboa lortzeko.</p><p>Jakiberri proiektuaren testuinguruan ideia-lehiaketa bat abian jarri izan da 'Euskal Healthy Fast Food' balizko produktuak aurkitzeko asmoz. 1.000 Euroko sari bat eskainiko zaio propo- samen hoberena aurkeztuko duen parte-hartzaileari. Horretaz gain, irabazlearen ideia edo lehiaketan parte hartuko duen beste edozeinen ideia komertzializatuko balitz, Jakibe- rri Lan-Taldeak bere proposatzailea saritu egingo luke. Lehiaketari buruz argibideak eskuratzeko ISEAko webgu- nera (www.iseamcc.net) edo ELKAR- BIDE (www.elkarbide.net) webgune sozialera jo daiteke. Bertan lehiake- taren arauaz gain, parte hartzeko galdera-formulategiak aurkitu ahal</p>",
             author: "",
             title: "Abian da Jakiberri ideia-Lehiaketa, 'Healthy Basque Fast Food' produktu berritzaileak sortzeko asmoz.",
@@ -99,6 +126,7 @@ Services = (function() {
         });
 
         section.item.push({
+<<<<<<< HEAD
             id:'2',
             clase:"noticia y2",
             onclick:"mas(this)",
@@ -133,10 +161,31 @@ Services = (function() {
             cat:"Agenda",
             catclass:"catHeaderMin berdea rounded",
             desc: "ESKORIATZA | Udalak antolatu ditu Xake txapelketak.",
+=======
+            clase:"noticia",
+            onclick:"",
+            cat:"Agenda",
+            catclass:"catHeaderMin berdea rounded",
+            desc: "4ESKORIATZA | Udalak antolatu ditu Xake txapelketak.",
             text: "",
             author: "",
             title: "",
             date: "",
+            img: ""
+        });
+
+        section.item.push({
+            clase:"noticia y2",
+            onclick:"",
+            cat:"Gertukoak",
+            catclass:"catHeaderMin horia rounded",
+            desc: "5> Vasco-Navarro trenbidearen itxieraren gaineko erakusketa.",
+>>>>>>> 49a0ae01a9f7c6bfed20d0e25dda92ee82e9f32f
+            text: "",
+            author: "",
+            title: "",
+            date: "",
+<<<<<<< HEAD
             img: ""
         });
 
@@ -151,16 +200,26 @@ Services = (function() {
             author: "",
             title: "",
             date: "",
+=======
+>>>>>>> 49a0ae01a9f7c6bfed20d0e25dda92ee82e9f32f
             img: imag3
         });
 
         section.item.push({
+<<<<<<< HEAD
             id:'6',
             clase:"noticia",
             onclick:"mas(this)",
             cat:"Gertukoak",
             catclass:"catHeaderMin horia rounded",
             desc: "> Etxeko gazteenak igerilekuan, arrainak itsasoan bezala.",
+=======
+            clase:"noticia",
+            onclick:"",
+            cat:"Gertukoak",
+            catclass:"catHeaderMin horia rounded",
+            desc: "6> Etxeko gazteenak igerilekuan, arrainak itsasoan bezala.",
+>>>>>>> 49a0ae01a9f7c6bfed20d0e25dda92ee82e9f32f
             text: "",
             author: "",
             title: "",
@@ -169,17 +228,26 @@ Services = (function() {
         });
 
         section.item.push({
+<<<<<<< HEAD
             id:'7',
             clase:"noticia",
             onclick:"mas(this)",
             cat:"Gertukoak",
             catclass:"catHeaderMin horia rounded",
             desc: "> Dozena bat neska-mutiko futbolean Gabonetako lehiaketan",
+=======
+            clase:"noticia",
+            onclick:"",
+            cat:"Gertukoak",
+            catclass:"catHeaderMin horia rounded",
+            desc: "7> Dozena bat neska-mutiko futbolean Gabonetako lehiaketan",
+>>>>>>> 49a0ae01a9f7c6bfed20d0e25dda92ee82e9f32f
             text: "",
             author: "",
             title: "",
             date: "",
             img: ""
+<<<<<<< HEAD
         });
 
         section.item.push({
@@ -194,6 +262,8 @@ Services = (function() {
             title: "",
             date: "",
             img: imag2
+=======
+>>>>>>> 49a0ae01a9f7c6bfed20d0e25dda92ee82e9f32f
         });
 
         section.item.push({
@@ -202,7 +272,59 @@ Services = (function() {
             onclick:"mas(this)",
             cat:"Agenda",
             catclass:"catHeaderMin berdea rounded",
-            desc: "BERGARA | Asteburuan jokatuko da Debagoieganko XX. Futbito txapelketa.",
+            desc: "8ESKORIATZA | Udalak antolatu ditu Xake txapelketak.",
+            text: "",
+            author: "",
+            title: "",
+            date: "",
+            img: ""
+        });
+
+        section.item.push({
+            clase:"noticia y2",
+            onclick:"",
+            cat:"Gertukoak",
+            catclass:"catHeaderMin horia rounded",
+            desc: "9> Vasco-Navarro trenbidearen itxieraren gaineko erakusketa.",
+            text: "",
+            author: "",
+            title: "",
+            date: "",
+            img: imag3
+        });
+
+        section.item.push({
+            clase:"noticia",
+            onclick:"",
+            cat:"Gertukoak",
+            catclass:"catHeaderMin horia rounded",
+            desc: "10> Etxeko gazteenak igerilekuan, arrainak itsasoan bezala.",
+            text: "",
+            author: "",
+            title: "",
+            date: "",
+            img: ""
+        });
+
+        section.item.push({
+            clase:"noticia",
+            onclick:"",
+            cat:"Gertukoak",
+            catclass:"catHeaderMin horia rounded",
+            desc: "11> Dozena bat neska-mutiko futbolean Gabonetako lehiaketan",
+            text: "",
+            author: "",
+            title: "",
+            date: "",
+            img: ""
+        });
+
+        section.item.push({
+            clase:"noticia",
+            onclick:"",
+            cat:"Gertukoak",
+            catclass:"catHeaderMin horia rounded",
+            desc: "12> Dozena bat neska-mutiko futbolean Gabonetako lehiaketan",
             text: "",
             author: "",
             title: "",
@@ -216,7 +338,7 @@ Services = (function() {
             onclick:"mas(this)",
             cat:"Agenda",
             catclass:"catHeaderMin berdea rounded",
-            desc: "ESKORIATZA | Udalak antolatu ditu Xake txapelketak.",
+            desc: "13ESKORIATZA | Udalak antolatu ditu Xake txapelketak.",
             text: "",
             author: "",
             title: "",
@@ -229,8 +351,8 @@ Services = (function() {
             clase:"noticia y2",
             onclick:"mas(this)",
             cat:"Gertukoak",
-            catclass:"catHeaderMin horia rounded withImg",
-            desc: "> Vasco-Navarro trenbidearen itxieraren gaineko erakusketa.",
+            catclass:"catHeaderMin horia rounded",
+            desc: "14> Vasco-Navarro trenbidearen itxieraren gaineko erakusketa.",
             text: "",
             author: "",
             title: "",
@@ -244,7 +366,7 @@ Services = (function() {
             onclick:"mas(this)",
             cat:"Gertukoak",
             catclass:"catHeaderMin horia rounded",
-            desc: "> Etxeko gazteenak igerilekuan, arrainak itsasoan bezala.",
+            desc: "15> Etxeko gazteenak igerilekuan, arrainak itsasoan bezala.",
             text: "",
             author: "",
             title: "",
@@ -258,7 +380,7 @@ Services = (function() {
             onclick:"mas(this)",
             cat:"Gertukoak",
             catclass:"catHeaderMin horia rounded",
-            desc: "> Dozena bat neska-mutiko futbolean Gabonetako lehiaketan",
+            desc: "16> Dozena bat neska-mutiko futbolean Gabonetako lehiaketan",
             text: "",
             author: "",
             title: "",
@@ -266,6 +388,7 @@ Services = (function() {
             img: ""
         });
 
+<<<<<<< HEAD
         section.item.push({
             id:'14',
             clase:"noticia x2 y4",
@@ -322,13 +445,27 @@ Services = (function() {
             img: ""
         });
 
+=======
+        $('#noticias').masonry("destroy");
+>>>>>>> 49a0ae01a9f7c6bfed20d0e25dda92ee82e9f32f
 
         var html = Mustache.to_html(Template.noticia(), section);
-        $('#noticias').html(header+html);
+        $('#noticias').html(html);
 
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#f4f5f5";
+
+<<<<<<< HEAD
         // $('#noticias').masonry({
         //     itemSelector: '.noticia',
         // });
+=======
+        $('#noticias').masonry({
+            itemSelector: '.noticia',
+            isFitWidth: true,
+            isAnimated: true
+        });
+
+>>>>>>> 49a0ae01a9f7c6bfed20d0e25dda92ee82e9f32f
     };
 
     function imgFinder (img){
