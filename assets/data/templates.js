@@ -5,7 +5,7 @@ Template = (function() {
             <div class="bottom">{{{text}}}</div>\
             </article>{{/item}}';
 
-  var noticia = '{{#item}}<article class="{{clase}}" onclick="{{onclick}}">\
+  var noticia = '{{#item}}<article id="{{id}}" class="{{clase}}" onclick="{{onclick}}">\
             {{{img}}}<div class="{{catclass}}"><h1>{{cat}}</h1></div>\
             <div class="title">{{title}}</div>\
             <div class="desc">{{{desc}}}</div>\

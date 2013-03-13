@@ -15,21 +15,22 @@
   <meta name="author" content="" />
 <!-- Development mode -->
   <link rel="stylesheet" href="assets/stylesheets/login.css">
-  <link rel="stylesheet" href="assets/stylesheets/mediaQuery.css">
   <link rel="stylesheet" href="assets/stylesheets/noticias.css">
   <link rel="stylesheet" href="assets/stylesheets/style.css">
+  <link rel="stylesheet" href="assets/stylesheets/mediaQuery.css">
 <!-- Production mode
   <link rel="stylesheet" href="src/tentu.css">
 -->
-  <body>
+  <body onload="checkCookie();">
 
     <section id="log">
       <div id="login">
-        <img class="logo" src="./assets/images/logo.png"/>
+        <div class="logo1"></div>
+        <!-- <img class="logo" src="./assets/images/logo.png"/> -->
         <div id="input">
-            <input class="rounded sarrera" placeholder="Erabiltzailea" type="text"/>
+            <input  class="rounded sarrera" placeholder="Erabiltzailea" type="text"/>
             <input class="rounded sarrera" placeholder="Pasahitza" type="password"/>
-            <div onclick="login();" class="boton rounded">SARTU</div>
+            <div onclick="setCookie();" class="boton rounded">SARTU</div>
 
           <div style="margin-top:30px;">
             <div id="regis">Oraindik ez zara Tentu?<br/>Izena edo pasahitza ahaztu dituzu?</div>
@@ -41,10 +42,14 @@
 
     <section id="not" style="display:none;">
       <div id="noticias"></div>
-      <footer>Tentu</footer>
+      <footer>
+        <div id="back" class="back icon" onclick="min();" style="display:none;"><span>&#59154;</span></div>
+        <div class="home" onclick="home();">Tentu</div>
+        <div class="user icon" onclick="delCookie()"><span>&#128100;</span></div>
+      </footer>
     </section>
 
-    <script src="assets/libraries/jquery-1.4.4.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="assets/libraries/mustache.js"></script>
     <script src="assets/libraries/jquery.masonry.min.js"></script>
 <!-- Development mode -->
