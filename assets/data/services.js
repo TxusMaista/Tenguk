@@ -411,6 +411,7 @@ Services = (function() {
 
 
         var html = Mustache.to_html(Template.noticia(), section);
+        $('.catHeader').remove();
         $('#not').prepend(header);
         $('#noticias').html(html);
 
