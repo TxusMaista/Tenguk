@@ -10,7 +10,7 @@
   width: '',
   height: '',
   scroll: '',
-  d_img: 'block',
+  d_img: 'inline',
   d_txt: '',
   d_tit: '',
   d_desc: '',
