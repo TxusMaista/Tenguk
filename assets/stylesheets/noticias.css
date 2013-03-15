@@ -4,11 +4,15 @@
 }
 
 #noticias{
-
   padding-bottom: 44px;
   width: 95%;
   display: inline-block;
+}
 
+#categorias{
+  padding-bottom: 44px;
+  width: 95%;
+  display: inline-block;
 }
 
 .category{
