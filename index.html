@@ -17,21 +17,23 @@
   <link rel="stylesheet" href="assets/stylesheets/style.css">
   <link rel="stylesheet" href="assets/stylesheets/noticias.css">
   <link rel="stylesheet" href="assets/stylesheets/login.css">
-  <link rel="stylesheet" href="assets/stylesheets/mediaQuery.css">
+<!--   <link rel="stylesheet" href="assets/stylesheets/mediaQuery.css"> -->
 <!-- Production mode
   <link rel="stylesheet" href="src/tentu.css">
 -->
-  <body onload="checkCookie();">
+  <body>
 
     <section id="log">
       <div id="login">
         <div class="logo1"></div>
         <!-- <img class="logo" src="./assets/images/logo.png"/> -->
         <div id="input">
-            <input  class="rounded sarrera" placeholder="Erabiltzailea" type="text"/>
-            <input class="rounded sarrera" placeholder="Pasahitza" type="password"/>
-            <div onclick="setCookie();" class="boton rounded">SARTU</div>
-
+            <form id="log_form">
+            <input id="form_id" name="form_id" type="hidden" value="user_login" />
+            <input id="username" name="username" class="rounded sarrera" placeholder="Erabiltzailea" type="text"/>
+            <input id="password" name="password" class="rounded sarrera" placeholder="Pasahitza" type="password"/>
+            <div onclick="login();" class="boton rounded">SARTU</div>
+          </form>
           <div style="margin-top:30px;">
             <div id="regis">Oraindik ez zara Tentu?<br/>Izena edo pasahitza ahaztu dituzu?</div>
             <span class="boton rounded">ERREGISTRATU</span>
@@ -46,19 +48,27 @@
 
     <section id="not" style="display:none;">
       <div id="noticias"></div>
-
+      <!--<div id="nav" style="z-index:3;top:0px;position:absolute;"><div onclick="Events.next();">></div><div onclick="Events.prev();"><</div></div>-->
     </section>
 
     <footer id="fot">
       <div id="back" class="back icon" onclick="min();" style="display:none;"><span>&#59154;</span></div>
-      <div class="home" onclick="home();">Tentu</div>
-      <div class="user icon" onclick="delCookie()"><span>&#128100;</span></div>
+      <div id="logout" class="back icon" onclick="logout();" style="display:none;"><span>&#10006;</span></div>
+      <div class="home">
+        <div id="prev" class="prev icon" onclick="prev();"><span>&#59237;</span></div>
+        <img src="assets/images/footer.png" onclick="home();">
+        <div id="next" class="next icon" onclick="next();"><span>&#59238;</span></div>
+      </div>
+      <div class="user icon" onclick=""><span>&#128100;</span></div>
     </footer>
 
 
     <script src="assets/libraries/jquery-1.9.1.js"></script>
     <script src="assets/libraries/mustache.js"></script>
     <script src="assets/libraries/jquery.masonry.min.js"></script>
+    <script src="assets/libraries/jquery.event.swipe.js"></script>
+    <script src="assets/libraries/jquery.event.move.js"></script>
+    <script src="assets/libraries/quo.js"></script>
 <!-- Development mode -->
     <script src="assets/data/events.js"></script>
     <script src="assets/data/templates.js"></script>

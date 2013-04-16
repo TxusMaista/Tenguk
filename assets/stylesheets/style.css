@@ -7,6 +7,7 @@ html{
   -webkit-box-flex:1;
   width: 100%;
   height: 100%;
+/*  -webkit-filter: grayscale(1);*/
   /* Use full body canvas */
 }
 
@@ -23,7 +24,6 @@ body {
   padding: 0;
   font-family: Calibri, Verdana, Ariel, sans-serif;
   font-size: 16px;
-  height: 100%;
 }
 
 section{
@@ -52,7 +52,7 @@ footer{
 
 .icon{
   margin: 0 5px 0 5px;
-  font-size: 2.5em;
+  font-size: 4.5em;
   font-family: 'icons';
 }
 
@@ -69,6 +69,16 @@ footer .home{
 }
 footer .user{
   float: right;
+}
+footer .prev{
+  vertical-align: top;
+  margin: 0px 40px;
+  display:none;
+}
+footer .next{
+  vertical-align: top;
+  margin: 0px 40px;
+  display:none;
 }
 
 ::-webkit-input-placeholder { font-style: italic; }
