@@ -1,5 +1,201 @@
 Services = (function() {
 
+    var sections = {item:[]};
+
+    var nabarmen = {item:[]};
+    var zaletasunak = {item:[]};
+    var gertukoak = {item:[]};
+    var agenda = {item:[]};
+
+//Funcion que filtra las noticias recibidas del servidor y las divide en los diferentes arrays.
+    var Fill = function() {
+
+        var url = 'URL del servicio web';
+        var data = {
+            v: '1.0',
+            q: encodeURIComponent("http://feeds.weblogssl.com/xataka2"),
+            num: 15,
+            output: 'json'
+        };
+
+        url = url + "?v=" + data.v + "&q=" + data.q + "&num=" + data.num + "&output=" + data.output + "&callback=?";
+
+        $.getJSON(url, function(response) {
+            
+            sections.item.push({
+                    clase:"category gorria doble rounded",
+                    onclick:"changeSec(0)",
+                    text: "",
+                    author: "",
+                    title: "Nabarmen",
+                    date: "",
+                    img: imag
+            });
+
+            if(reponse.seccion.categorias.length != 0)
+                sections.item.push({
+                    clase:"category urdina rounded",
+                    onclick:"changeSec(1)",
+                    text: "",
+                    author: "",
+                    title: "Zaletasunak",
+                    date: "",
+                    img: ""
+                });
+
+            if(reponse.seccion.municipios.length != 0)
+                sections.item.push({
+                    clase:"category horia rounded",
+                    onclick:"changeSec(2)",
+                    text: "",
+                    author: "",
+                    title: "Gertukoak",
+                    date: "",
+                    img: ""
+                });
+
+            if(reponse.seccion.agenda.length != 0)
+                sections.item.push({
+                    clase:"category berdea rounded",
+                    onclick:"changeSec(3)",
+                    text: "",
+                    author: "",
+                    title: "Agenda",
+                    date: "",
+                    img: ""
+                });
+
+            for(var i=0;i<response.length;i++){
+                var img;
+                if (response.img != "")
+                    img = false;
+                else
+                    img = true;
+                if(response.tipo == "evento")
+                agenda.push({
+                    id: agenda.item.length,
+                    clase:random(img),
+                    onclick:"mas(this);hideAll(this);",
+                    cat:"Agenda",
+                    catclass:"catHeaderMin berdea rounded",
+                    desc: desc("","");
+                    text: imag + "";
+                    author: "",
+                    title: "",
+                    date: "",
+                    img: ""
+                });
+
+                if(response.tipo == "noticia")&&(response.categorias.lenght != 0)&&(reponse.seccion.categorias.length != 0)
+                zaletasunak.push({
+                    id: zaletasunak.item.length,
+                    clase:random(img),
+                    onclick:"mas(this);hideAll(this);",
+                    cat:"Zaletasunak",
+                    catclass:"catHeaderMin urdina rounded",
+                    desc: desc("","");
+                    text: imag + "";
+                    author: "",
+                    title: "",
+                    date: "",
+                    img: ""
+                });
+
+                if(response.tipo == "noticia")&&(response.municipios.lenght != 0)&&(reponse.seccion.municipios.length != 0)
+                gertukoak.push({
+                    id: gertukoak.item.length,
+                    clase:random(img),
+                    onclick:"mas(this);hideAll(this);",
+                    cat:"Gertukoak",
+                    catclass:"catHeaderMin horia rounded",
+                    desc: desc("","");
+                    text: imag + "";
+                    author: "",
+                    title: "",
+                    date: "",
+                    img: ""
+                });
+
+                if(response.tipo == "nabarmen")
+                nabarmen.push({
+                    id: nabarmen.item.length,
+                    clase:random(img),
+                    onclick:"mas(this);hideAll(this);",
+                    cat:"",
+                    catclass:"catHeaderMin horia rounded",
+                    desc: desc("","");
+                    text: imag + "";
+                    author: "",
+                    title: "",
+                    date: "",
+                    img: ""
+                }
+            }
+        }
+    }
+
+    var Print = function() {
+        var html = Mustache.to_html(Template.categoria(), sections);
+        $('#secciones').html(html);
+        var html = Mustache.to_html(Template.noticia(), nabarmen);
+        $('#nabarmen').html(html);
+        var html = Mustache.to_html(Template.noticia(), agenda);
+        $('#agenda').html(html);
+        var html = Mustache.to_html(Template.noticia(), zaletasunak);
+        $('#zaletasunak').html(html);
+        var html = Mustache.to_html(Template.noticia(), gertukoak);
+        $('#gertukoak').html(html);
+
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#f4f5f5";
+
+        $('#secciones').masonry({
+            itemSelector: '.seccion',
+            isFitWidth: true,
+            isAnimated: true
+        });
+
+        $('#nabarmen').masonry({
+            itemSelector: '.noticia',
+            isFitWidth: true,
+            isAnimated: true
+        });
+
+        $('#gertukoak').masonry({
+            itemSelector: '.noticia',
+            isFitWidth: true,
+            isAnimated: true
+        });
+
+        $('#agenda').masonry({
+            itemSelector: '.noticia',
+            isFitWidth: true,
+            isAnimated: true
+        });
+
+        $('#zaletasunak').masonry({
+            itemSelector: '.noticia',
+            isFitWidth: true,
+            isAnimated: true
+        });
+    }
+
+//Función que realiza un random del tamaño de la miniatura de noticia
+    function random(o) {
+        var result;
+        var r = Math.floor((Math.random()*3)+1);
+
+        if (o)
+            switch(r)
+                case 1:result = "noticia";;break;
+                case 2:result = "noticia y2";;break;
+                case 3:result = "noticia x2 y4";;break;
+                default:result = "noticia";
+        else
+            result = "noticia";
+
+        return result;
+    }
+
 	var Category = function() {
         var section = {item:[]};
 

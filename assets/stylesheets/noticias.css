@@ -7,6 +7,7 @@
   padding-bottom: 44px;
   width: 95%;
   display: inline-block;
+  position: relative;
 }
 
 #categorias{
@@ -89,8 +90,8 @@
 
 .x2{width: 572px;font-size: 22px;}
 
-.imgY2{height: 180px;margin-bottom: 10px;}
-.imgY4{height: 480px;margin-bottom: 10px;}
+.imgY2{margin-bottom: 10px;}
+.imgY4{margin-bottom: 10px;}
 
 .noticia.centerLeft{
   -webkit-animation-name: centerLeft;

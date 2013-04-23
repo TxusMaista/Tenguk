@@ -24,6 +24,10 @@
   <body>
 
     <section id="log">
+      <div class="langs" style="float:right; margin-right: 50px;">
+        <a href="#" onclick="Events.parseLang('eu');">EU</a>
+        <a href="#" onclick="Events.parseLang('es');">ES</a>
+      </div>
       <div id="login">
         <div class="logo1"></div>
         <!-- <img class="logo" src="./assets/images/logo.png"/> -->
@@ -32,28 +36,43 @@
             <input id="form_id" name="form_id" type="hidden" value="user_login" />
             <input id="username" name="username" class="rounded sarrera" placeholder="Erabiltzailea" type="text"/>
             <input id="password" name="password" class="rounded sarrera" placeholder="Pasahitza" type="password"/>
-            <div onclick="login();" class="boton rounded">SARTU</div>
+            <div onclick="Events.login();" id="log_but" class="boton rounded">SARTU</div>
           </form>
           <div style="margin-top:30px;">
             <div id="regis">Oraindik ez zara Tentu?<br/>Izena edo pasahitza ahaztu dituzu?</div>
-            <span class="boton rounded">ERREGISTRATU</span>
+            <span class="boton rounded" id="reg_but">ERREGISTRATU</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="cat" style="display:none">
-      <div id="categorias"></div>
+    <section id="sec" style="display:none">
+      <div id="secciones"></div>
     </section>
 
-    <section id="not" style="display:none;">
-      <div id="noticias"></div>
+    <section id="nab" style="display:none;">
+      <div id="nabarmen"></div>
+      <!--<div id="nav" style="z-index:3;top:0px;position:absolute;"><div onclick="Events.next();">></div><div onclick="Events.prev();"><</div></div>-->
+    </section>
+
+    <section id="zal" style="display:none;">
+      <div id="zaletasunak"></div>
+      <!--<div id="nav" style="z-index:3;top:0px;position:absolute;"><div onclick="Events.next();">></div><div onclick="Events.prev();"><</div></div>-->
+    </section>
+
+    <section id="age" style="display:none;">
+      <div id="agenda"></div>
+      <!--<div id="nav" style="z-index:3;top:0px;position:absolute;"><div onclick="Events.next();">></div><div onclick="Events.prev();"><</div></div>-->
+    </section>
+
+    <section id="ger" style="display:none;">
+      <div id="gertukoak"></div>
       <!--<div id="nav" style="z-index:3;top:0px;position:absolute;"><div onclick="Events.next();">></div><div onclick="Events.prev();"><</div></div>-->
     </section>
 
     <footer id="fot">
       <div id="back" class="back icon" onclick="min();" style="display:none;"><span>&#59154;</span></div>
-      <div id="logout" class="back icon" onclick="logout();" style="display:none;"><span>&#10006;</span></div>
+      <div id="logout" class="back icon" onclick="logout();" style="display:none;"><span>&#10060;</span></div>
       <div class="home">
         <div id="prev" class="prev icon" onclick="prev();"><span>&#59237;</span></div>
         <img src="assets/images/footer.png" onclick="home();">
@@ -70,6 +89,7 @@
     <script src="assets/libraries/jquery.event.move.js"></script>
     <script src="assets/libraries/quo.js"></script>
 <!-- Development mode -->
+    <script src="assets/data/langs.js"></script>
     <script src="assets/data/events.js"></script>
     <script src="assets/data/templates.js"></script>
     <script src="assets/data/services.js"></script>
