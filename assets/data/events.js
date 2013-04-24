@@ -188,8 +188,11 @@ Events = (function() {
       delCookie('uname');
       document.getElementById("log").style.display = "block";
       document.getElementById("sec").style.display = "none";
+      document.getElementById("nab").style.display = "none";
+      document.getElementById("zal").style.display = "none";
+      document.getElementById("age").style.display = "none";
+      document.getElementById("ger").style.display = "none";
       document.getElementById("fot").style.display = "none";
-      document.getElementById("not").style.display = "none";
     });
   };
 
@@ -203,7 +206,10 @@ Events = (function() {
     Services.Fil();
     Services.Print();
     document.getElementById("log").style.display = "none";
+    document.getElementById("nab").style.display = "none";
     document.getElementById("zal").style.display = "none";
+    document.getElementById("age").style.display = "none";
+    document.getElementById("ger").style.display = "none";
     document.getElementById("sec").style.display = "inline-block";
     document.getElementById("logout").style.display = "block";
     document.getElementById("fot").style.display = "block";
@@ -232,14 +238,16 @@ Events = (function() {
    */
 
   function home() {
-    document.getElementById("not").style.display = "none";
+    document.getElementById("nab").style.display = "none";
     document.getElementById("zal").style.display = "none";
+    document.getElementById("age").style.display = "none";
+    document.getElementById("ger").style.display = "none";
     document.getElementById("sec").style.display = "block";
     document.getElementById("logout").style.display = "block";
     document.getElementById("prev").style.display= 'none';
     document.getElementById("next").style.display= 'none';
     document.getElementById("back").style.display= 'none';
-    document.getElementById("share").style.display= 'none';
+    document.getElementById("si").style.display= 'none';
     document.getElementById("day").style.display= 'none';
     document.getElementById("night").style.display= 'none';
   };
@@ -251,7 +259,7 @@ Events = (function() {
    */
 
   function night() {
-    document.getElementsByClassName("present")[0].setAttribute("class", "max present night");
+    document.getElementsById(def.id).setAttribute("class", "night");
     document.getElementById("night").style.display = "none";
     document.getElementById("day").style.display = "block";
   };
@@ -263,9 +271,22 @@ Events = (function() {
    */
 
   function day() {
-    document.getElementsByClassName("present")[0].setAttribute("class", "max present day");
+    document.getElementsById(def.id).setAttribute("class", "day");
     document.getElementById("day").style.display = "none";
     document.getElementById("night").style.display = "block";
+  };
+
+  /*
+   * Función que muestra el menú de compartir
+   * Parámetros: -
+   * Devuelve: -
+   */
+
+  function shareMenu(){
+    console.log('shareMenu');
+    $('#sw').toggleClass('swup');
+    $('#sw').toggleClass('swdown');
+    console.log('end shareMenu');
   };
 
   /*
@@ -404,7 +425,7 @@ Events = (function() {
     document.getElementById("prev").style.display= 'inline-block';
     document.getElementById("next").style.display= 'inline-block';
     document.getElementById("night").style.display= 'inline-block';
-    document.getElementById("share").style.display= 'inline-block';
+    document.getElementById("si").style.display= 'inline-block';
 
     window.scrollTo(0,0);
   };
@@ -481,7 +502,7 @@ Events = (function() {
       document.getElementById("next").style.display= 'none';
       document.getElementById("day").style.display= 'none';
       document.getElementById("night").style.display= 'none';
-      document.getElementById("share").style.display= 'none';
+      document.getElementById("si").style.display= 'none';
       document.getElementById("logout").style.display= 'block';
 
       def.tope = def.tope.substring(0, def.tope.length - 2);
@@ -507,7 +528,8 @@ Events = (function() {
     mas: function(x){ mas(x); },
     min: function(){ min(); },
     prev: function(){ prev(); },
-    next: function(){ next(); }
+    next: function(){ next(); },
+    shareMenu: function(){ shareMenu(); }
   };
 
 }).call(this);

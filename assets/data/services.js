@@ -18,8 +18,6 @@ Services = (function() {
             output: 'json'
         };
 
-        //url = url + "?v=" + data.v + "&q=" + data.q + "&num=" + data.num + "&output=" + data.output + "&callback=?";
-        console.log(url);
         $.getJSON(url, function(response) {
 
             sections.item.push({

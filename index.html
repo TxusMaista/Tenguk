@@ -52,38 +52,42 @@
 
     <section id="nab" style="display:none;">
       <div id="nabarmen"></div>
-      <!--<div id="nav" style="z-index:3;top:0px;position:absolute;"><div onclick="Events.next();">></div><div onclick="Events.prev();"><</div></div>-->
     </section>
 
     <section id="zal" style="display:none;">
       <div id="zaletasunak"></div>
-      <!--<div id="nav" style="z-index:3;top:0px;position:absolute;"><div onclick="Events.next();">></div><div onclick="Events.prev();"><</div></div>-->
     </section>
 
     <section id="age" style="display:none;">
       <div id="agenda"></div>
-      <!--<div id="nav" style="z-index:3;top:0px;position:absolute;"><div onclick="Events.next();">></div><div onclick="Events.prev();"><</div></div>-->
     </section>
 
     <section id="ger" style="display:none;">
       <div id="gertukoak"></div>
-      <!--<div id="nav" style="z-index:3;top:0px;position:absolute;"><div onclick="Events.next();">></div><div onclick="Events.prev();"><</div></div>-->
     </section>
 
     <footer id="fot">
-      <div id="back" class="back icon" onclick="min();" style="display:none;"><span>&#59154;</span></div>
-      <div id="logout" class="back icon" onclick="logout();" style="display:none;"><span>&#10060;</span></div>
+      <div id="back" class="back icon" onclick="Events.min();" style="display:none;"><span>&#59154;</span></div>
+      <div id="logout" class="back icon" onclick="Events.logout();" style="display:none;"><span>&#10060;</span></div>
       <div class="home">
-        <div id="prev" class="prev icon" onclick="prev();"><span>&#59237;</span></div>
-        <img src="assets/images/footer.png" onclick="home();">
-        <div id="next" class="next icon" onclick="next();"><span>&#59238;</span></div>
+        <div id="prev" class="prev icon" onclick="Events.prev();"><span>&#59237;</span></div>
+        <img src="./assets/images/logo_small.svg" onclick="Events.home();">
+        <div id="next" class="next icon" onclick="Events.next();"><span>&#59238;</span></div>
       </div>
       <div class="user icon" onclick=""><span>&#128100;</span></div>
-      <div id="share" class="share icon"><span>&#59196;</span></div>
-      <div id="night" class="night icon"><span>&#9681;</span></div>
-      <div id="day" class="day icon"><span>&#128262;</span></div>
+      <div id="si" class="share_icon icon" onclick="Events.shareMenu();"><span>&#59196;</span></div>
+      <div id="night" class="night icon" onclick="Events.night();"><span>&#9681;</span></div>
+      <div id="day" class="day icon" onclick="Events.day();"><span>&#128262;</span></div>
     </footer>
 
+    <div id="sw" class="share_wraper swdown">
+      <ul class="share">
+        <li><span class="social_icon">&#62217;</span></li>
+        <li><span class="social_icon">&#62220;</span></li>
+        <li><span class="social_icon">&#62223;</span></li>
+        <li><span class="icon">&#9993;</span></li>
+      </ul>
+    </div>
 
     <script src="assets/libraries/jquery-1.9.1.js"></script>
     <script src="assets/libraries/mustache.js"></script>
