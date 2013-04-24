@@ -794,7 +794,7 @@ Services = (function() {
     return {
         template: function(o){ Templating(o);},
         category: function(){ Category();},
-        Fill: function(){ Fill(); },
+        Fil: function(){ Fil(); },
         Print: function(){ Print(); }
     };
 

@@ -70,6 +70,24 @@ footer .home{
 footer .user{
   float: right;
 }
+
+footer .share{
+  float: right;
+  display:none;
+}
+
+
+footer .night{
+  float: right;
+  display:none;
+}
+
+
+footer .day{
+  float: right;
+  display:none;
+}
+
 footer .prev{
   vertical-align: top;
   margin: 0px 40px;

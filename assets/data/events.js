@@ -200,7 +200,7 @@ Events = (function() {
    */
 
   function main() {
-    Services.Fill();
+    Services.Fil();
     Services.Print();
     document.getElementById("log").style.display = "none";
     document.getElementById("zal").style.display = "none";
@@ -239,6 +239,9 @@ Events = (function() {
     document.getElementById("prev").style.display= 'none';
     document.getElementById("next").style.display= 'none';
     document.getElementById("back").style.display= 'none';
+    document.getElementById("share").style.display= 'none';
+    document.getElementById("day").style.display= 'none';
+    document.getElementById("night").style.display= 'none';
   };
 
   /*
@@ -249,8 +252,8 @@ Events = (function() {
 
   function night() {
     document.getElementsByClassName("present")[0].setAttribute("class", "max present night");
-    document.getElementById("n").style.display = "none";
-    document.getElementById("d").style.display = "block";
+    document.getElementById("night").style.display = "none";
+    document.getElementById("day").style.display = "block";
   };
 
   /*
@@ -261,8 +264,8 @@ Events = (function() {
 
   function day() {
     document.getElementsByClassName("present")[0].setAttribute("class", "max present day");
-    document.getElementById("d").style.display = "none";
-    document.getElementById("n").style.display = "block";
+    document.getElementById("day").style.display = "none";
+    document.getElementById("night").style.display = "block";
   };
 
   /*
@@ -400,6 +403,8 @@ Events = (function() {
     document.getElementById("back").style.display= 'block';
     document.getElementById("prev").style.display= 'inline-block';
     document.getElementById("next").style.display= 'inline-block';
+    document.getElementById("night").style.display= 'inline-block';
+    document.getElementById("share").style.display= 'inline-block';
 
     window.scrollTo(0,0);
   };
@@ -474,6 +479,9 @@ Events = (function() {
       document.getElementById("back").style.display= 'none';
       document.getElementById("prev").style.display= 'none';
       document.getElementById("next").style.display= 'none';
+      document.getElementById("day").style.display= 'none';
+      document.getElementById("night").style.display= 'none';
+      document.getElementById("share").style.display= 'none';
       document.getElementById("logout").style.display= 'block';
 
       def.tope = def.tope.substring(0, def.tope.length - 2);
