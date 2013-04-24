@@ -24,7 +24,7 @@ Services = (function() {
             
             sections.item.push({
                     clase:"category gorria doble rounded",
-                    onclick:"changeSec(0)",
+                    onclick:"Services.changeSec(0)",
                     text: "",
                     author: "",
                     title: "Nabarmen",
@@ -35,7 +35,7 @@ Services = (function() {
             if(reponse.categorias.length != 0)
                 sections.item.push({
                     clase:"category urdina rounded",
-                    onclick:"changeSec(1)",
+                    onclick:"Services.changeSec(1)",
                     text: "",
                     author: "",
                     title: "Zaletasunak",
@@ -46,7 +46,7 @@ Services = (function() {
             if(reponse.municipios.length != 0)
                 sections.item.push({
                     clase:"category horia rounded",
-                    onclick:"changeSec(2)",
+                    onclick:"Services.changeSec(2)",
                     text: "",
                     author: "",
                     title: "Gertukoak",
@@ -57,7 +57,7 @@ Services = (function() {
             if((reponse.eventosd.length != 0)||((reponse.eventosg.length != 0)))
                 sections.item.push({
                     clase:"category berdea rounded",
-                    onclick:"changeSec(3)",
+                    onclick:"Services.changeSec(3)",
                     text: "",
                     author: "",
                     title: "Agenda",
@@ -76,7 +76,7 @@ Services = (function() {
                 zaletasunak.push({
                     id: zaletasunak.item.length,
                     clase: random(img),
-                    onclick:"mas(this);hideAll(this);",
+                    onclick:"Services.mas(this);Services.hideAll(this);",
                     cat: response.noticia[i].kategoria,
                     catclass:"catHeaderMin urdina rounded",
                     desc: desc("Zaletasunak",response.noticia[i].kategoria + " | " + response.noticia[i].title),
@@ -91,7 +91,7 @@ Services = (function() {
                 gertukoak.push({
                     id: gertukoak.item.length,
                     clase: random(img),
-                    onclick:"mas(this);hideAll(this);",
+                    onclick:"Services.mas(this);Services.hideAll(this);",
                     cat: response.noticia[i].kategoria,
                     catclass:"catHeaderMin horia rounded",
                     desc: desc("Gertukoak",response.noticia[i].herria + " | " + response.noticia[i].title),
@@ -106,7 +106,7 @@ Services = (function() {
                 nabarmen.push({
                     id: nabarmen.item.length,
                     clase: random(img),
-                    onclick:"mas(this);hideAll(this);",
+                    onclick:"Services.mas(this);Services.hideAll(this);",
                     cat: response.noticia[i].kategoria,
                     catclass:"catHeaderMin horia rounded",
                     desc: desc("Gertukoak",response.noticia[i].herria + " | " + response.noticia[i].title),
@@ -122,7 +122,7 @@ Services = (function() {
                 agenda.push({
                     id: agenda.item.length,
                     clase: "noticia",
-                    onclick:"mas(this);hideAll(this);",
+                    onclick:"Services.mas(this);Services.hideAll(this);",
                     cat: "Agenda",
                     catclass:"catHeaderMin berdea rounded",
                     desc: desc("Agenda",response.eventog[i].herria + " | " + response.eventog[i].description),
@@ -138,7 +138,7 @@ Services = (function() {
                 agenda.push({
                     id: agenda.item.length,
                     clase: "noticia",
-                    onclick:"mas(this);hideAll(this);",
+                    onclick:"Services.mas(this);Services.hideAll(this);",
                     cat: "Agenda",
                     catclass:"catHeaderMin berdea rounded",
                     desc: desc("Agenda",response.eventod[i].herria + " | " + response.eventod[i].title),
