@@ -1,0 +1,123 @@
+{
+  "item": [
+    {
+      "id": "1",
+      "clase": "noticia",
+      "onclick": "mas(this)",
+      "cat": "Zaletasunak",
+      "catclass": "catHeaderMin urdina rounded",
+      "desc": "1 > GASTRONOMIA | Abian da Jakiberri ideia-Lehiaketa, 'Healthy Basque Fast Food' produktu berritzaileak sortzeko asmoz.",
+      "text": "<p>Jakiberri Proiektua, 'Healthy Fast Food' tankerako arin prestatzeko euskal janari berri, naturala, osa- suntsua, anitza eta nutritiboa izango den produktuak lortzeko ikerkuntza proiektua da.</p><p>Jakiberri Proiektuaren asmoa euskal jatorrizko 'Healthy Fast Food' sukal- daritza mota berritzailea sortzea da, Obama Presidentearen legediarekin bat letorkeena.</p><p>Jakiberri Proiektua ISEAk (Corporacion MONDRAGON), JAKIONek eta AZARO FUNDAZIOAk bultzatutakoa da, horre- tarako BASQUE CULINARY CENTER eta HAZI laguntza dutelarik.</p><p>Nahiz eta gaur egun 'Healthy Bas- que Fast Food' eskaintzarik ez egon, Jakiberri Proiektuaren helburua da, gure sormen potentziala, ezagutza, tradizioa eta gure gastronomiako giza kolektiboa uztartzea da eta horrela elikadura mota berria, naturala, osasuntsua, anitza eta nutritiboa lortzeko.</p><p>Jakiberri proiektuaren testuinguruan ideia-lehiaketa bat abian jarri izan da 'Euskal Healthy Fast Food' balizko produktuak aurkitzeko asmoz. 1.000 Euroko sari bat eskainiko zaio propo- samen hoberena aurkeztuko duen parte-hartzaileari. Horretaz gain, irabazlearen ideia edo lehiaketan parte hartuko duen beste edozeinen ideia komertzializatuko balitz, Jakibe- rri Lan-Taldeak bere proposatzailea saritu egingo luke. Lehiaketari buruz argibideak eskuratzeko ISEAko webgu- nera (www.iseamcc.net) edo ELKAR- BIDE (www.elkarbide.net) webgune sozialera jo daiteke. Bertan lehiake- taren arauaz gain, parte hartzeko galdera-formulategiak aurkitu ahal</p>",
+      "author": "",
+      "title": "Abian da Jakiberri ideia-Lehiaketa, 'Healthy Basque Fast Food' produktu berritzaileak sortzeko asmoz.",
+      "date": "",
+      "img": ""
+    },
+    {
+      "id": "2",
+      "clase": "noticia y2",
+      "onclick": "mas(this)",
+      "cat": "Kirol agenda",
+      "catclass": "catHeaderMin berdea rounded withImg",
+      "desc": "2 > ARRASATE | Asteburuan jokatuko da Debagoieganko XX. Futbito txapelketa.",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess ecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "author": "",
+      "title": "Asteburuan jokatuko da Debagoieganko XX. Futbito txapelketa.",
+      "date": "",
+      "img": "<img width='100%' class='imag rounded imgY2' src='./assets/images/futbol.jpg'/>"
+    },
+    {
+      "id": "3",
+      "clase": "noticia y2",
+      "onclick": "mas(this)",
+      "cat": "Gertukoak",
+      "catclass": "catHeaderMin horia rounded",
+      "desc": "3 > Vasco-Navarro trenbidearen itxieraren gaineko erakusketa.",
+      "text": "<p>Jakiberri Proiektua, 'Healthy Fast Food' tankerako arin prestatzeko euskal janari berri, naturala, osa- suntsua, anitza eta nutritiboa izango den produktuak lortzeko ikerkuntza proiektua da.</p><p>Jakiberri Proiektuaren asmoa euskal jatorrizko 'Healthy Fast Food' sukal- daritza mota berritzailea sortzea da, Obama Presidentearen legediarekin bat letorkeena.</p><p>Jakiberri Proiektua ISEAk (Corporacion MONDRAGON), JAKIONek eta AZARO FUNDAZIOAk bultzatutakoa da, horre- tarako BASQUE CULINARY CENTER eta HAZI laguntza dutelarik.</p><p>Nahiz eta gaur egun 'Healthy Bas- que Fast Food' eskaintzarik ez egon, Jakiberri Proiektuaren helburua da, gure sormen potentziala, ezagutza, tradizioa eta gure gastronomiako giza kolektiboa uztartzea da eta horrela elikadura mota berria, naturala, osasuntsua, anitza eta nutritiboa lortzeko.</p><p>Jakiberri proiektuaren testuinguruan ideia-lehiaketa bat abian jarri izan da 'Euskal Healthy Fast Food' balizko produktuak aurkitzeko asmoz. 1.000 Euroko sari bat eskainiko zaio propo- samen hoberena aurkeztuko duen parte-hartzaileari. Horretaz gain, irabazlearen ideia edo lehiaketan parte hartuko duen beste edozeinen ideia komertzializatuko balitz, Jakibe- rri Lan-Taldeak bere proposatzailea saritu egingo luke. Lehiaketari buruz argibideak eskuratzeko ISEAko webgu- nera (www.iseamcc.net) edo ELKAR- BIDE (www.elkarbide.net) webgune sozialera jo daiteke. Bertan lehiake- taren arauaz gain, parte hartzeko galdera-formulategiak aurkitu ahal</p>",
+      "author": "",
+      "title": "Vasco-Navarro trenbidearen itxieraren gaineko erakusketa produktu berritzaileak sortzeko asmoz.",
+      "date": "",
+      "img": "<img width='100%' class='imag rounded imgY2' src='./assets/images//tren.jpeg'/>"
+    },
+
+    {
+      "id": "4",
+      "clase": "noticia",
+      "onclick": "mas(this)",
+      "cat": "Zaletasunak",
+      "catclass": "catHeaderMin urdina rounded",
+      "desc": " > GASTRONOMIA | Abian da Jakiberri ideia-Lehiaketa, 'Healthy Basque Fast Food' produktu berritzaileak sortzeko asmoz.",
+      "text": "<p>Jakiberri Proiektua, 'Healthy Fast Food' tankerako arin prestatzeko euskal janari berri, naturala, osa- suntsua, anitza eta nutritiboa izango den produktuak lortzeko ikerkuntza proiektua da.</p><p>Jakiberri Proiektuaren asmoa euskal jatorrizko 'Healthy Fast Food' sukal- daritza mota berritzailea sortzea da, Obama Presidentearen legediarekin bat letorkeena.</p><p>Jakiberri Proiektua ISEAk (Corporacion MONDRAGON), JAKIONek eta AZARO FUNDAZIOAk bultzatutakoa da, horre- tarako BASQUE CULINARY CENTER eta HAZI laguntza dutelarik.</p><p>Nahiz eta gaur egun 'Healthy Bas- que Fast Food' eskaintzarik ez egon, Jakiberri Proiektuaren helburua da, gure sormen potentziala, ezagutza, tradizioa eta gure gastronomiako giza kolektiboa uztartzea da eta horrela elikadura mota berria, naturala, osasuntsua, anitza eta nutritiboa lortzeko.</p><p>Jakiberri proiektuaren testuinguruan ideia-lehiaketa bat abian jarri izan da 'Euskal Healthy Fast Food' balizko produktuak aurkitzeko asmoz. 1.000 Euroko sari bat eskainiko zaio propo- samen hoberena aurkeztuko duen parte-hartzaileari. Horretaz gain, irabazlearen ideia edo lehiaketan parte hartuko duen beste edozeinen ideia komertzializatuko balitz, Jakibe- rri Lan-Taldeak bere proposatzailea saritu egingo luke. Lehiaketari buruz argibideak eskuratzeko ISEAko webgu- nera (www.iseamcc.net) edo ELKAR- BIDE (www.elkarbide.net) webgune sozialera jo daiteke. Bertan lehiake- taren arauaz gain, parte hartzeko galdera-formulategiak aurkitu ahal</p>",
+      "author": "",
+      "title": "Abian da Jakiberri ideia-Lehiaketa, 'Healthy Basque Fast Food' produktu berritzaileak sortzeko asmoz.",
+      "date": "",
+      "img": " "
+    },
+    {
+      "id": "5",
+      "clase": "noticia",
+      "onclick": "mas(this)",
+      "cat": "Zaletasunak",
+      "catclass": "catHeaderMin berdea rounded",
+      "desc": "2 > EKONOMIA |  IBEX-35 Goraka doa.",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess ecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "author": "",
+      "title": "Ekonomia oso gaizki doa.",
+      "date": "",
+      "img": " "
+    },
+    {
+      "id": "6",
+      "clase":"noticia x2 y4",
+      "onclick":"mas(this)",
+      "cat":"Zaletasunak",
+      "catclass":"catHeaderMin urdina rounded withImg",
+      "desc": "14 > GASTRONOMIA | Abian da Jakiberri ideia-Lehiaketa, 'Healthy Basque Fast Food' produktu berritzaileak sortzeko asmoz.",
+      "text": "<img width='100%' class='imag rounded imgY4' src='./assets/images/libro.jpg'/><p>Jakiberri Proiektua, 'Healthy Fast Food' tankerako arin prestatzeko euskal janari berri, naturala, osa- suntsua, anitza eta nutritiboa izango den produktuak lortzeko ikerkuntza proiektua da.</p><p>Jakiberri Proiektuaren asmoa euskal jatorrizko 'Healthy Fast Food' sukal- daritza mota berritzailea sortzea da, Obama Presidentearen legediarekin bat letorkeena.</p><p>Jakiberri Proiektua ISEAk (Corporacion MONDRAGON), JAKIONek eta AZARO FUNDAZIOAk bultzatutakoa da, horre- tarako BASQUE CULINARY CENTER eta HAZI laguntza dutelarik.</p><p>Nahiz eta gaur egun 'Healthy Bas- que Fast Food' eskaintzarik ez egon, Jakiberri Proiektuaren helburua da, gure sormen potentziala, ezagutza, tradizioa eta gure gastronomiako giza kolektiboa uztartzea da eta horrela elikadura mota berria, naturala, osasuntsua, anitza eta nutritiboa lortzeko.</p><p>Jakiberri proiektuaren testuinguruan ideia-lehiaketa bat abian jarri izan da 'Euskal Healthy Fast Food' balizko produktuak aurkitzeko asmoz. 1.000 Euroko sari bat eskainiko zaio propo- samen hoberena aurkeztuko duen parte-hartzaileari. Horretaz gain, irabazlearen ideia edo lehiaketan parte hartuko duen beste edozeinen ideia komertzializatuko balitz, Jakibe- rri Lan-Taldeak bere proposatzailea saritu egingo luke. Lehiaketari buruz argibideak eskuratzeko ISEAko webgu- nera (www.iseamcc.net) edo ELKAR- BIDE (www.elkarbide.net) webgune sozialera jo daiteke. Bertan lehiake- taren arauaz gain, parte hartzeko galdera-formulategiak aurkitu ahal</p>",
+      "author": "",
+      "title": "Abian da Jakiberri ideia-Lehiaketa, 'Healthy Basque Fast Food' produktu berritzaileak sortzeko asmoz.",
+      "date": "",
+      "img": "<img width='100%' class='imag rounded imgY4' src='./assets/images/libro.jpg'/>"
+    },
+
+    {
+      "id": "7",
+      "clase": "noticia",
+      "onclick": "mas(this)",
+      "cat": "Zaletasunak",
+      "catclass": "catHeaderMin urdina rounded",
+      "desc": "1 > GASTRONOMIA | Abian da Jakiberri ideia-Lehiaketa, 'Healthy Basque Fast Food' produktu berritzaileak sortzeko asmoz.",
+      "text": "<p>Jakiberri Proiektua, 'Healthy Fast Food' tankerako arin prestatzeko euskal janari berri, naturala, osa- suntsua, anitza eta nutritiboa izango den produktuak lortzeko ikerkuntza proiektua da.</p><p>Jakiberri Proiektuaren asmoa euskal jatorrizko 'Healthy Fast Food' sukal- daritza mota berritzailea sortzea da, Obama Presidentearen legediarekin bat letorkeena.</p><p>Jakiberri Proiektua ISEAk (Corporacion MONDRAGON), JAKIONek eta AZARO FUNDAZIOAk bultzatutakoa da, horre- tarako BASQUE CULINARY CENTER eta HAZI laguntza dutelarik.</p><p>Nahiz eta gaur egun 'Healthy Bas- que Fast Food' eskaintzarik ez egon, Jakiberri Proiektuaren helburua da, gure sormen potentziala, ezagutza, tradizioa eta gure gastronomiako giza kolektiboa uztartzea da eta horrela elikadura mota berria, naturala, osasuntsua, anitza eta nutritiboa lortzeko.</p><p>Jakiberri proiektuaren testuinguruan ideia-lehiaketa bat abian jarri izan da 'Euskal Healthy Fast Food' balizko produktuak aurkitzeko asmoz. 1.000 Euroko sari bat eskainiko zaio propo- samen hoberena aurkeztuko duen parte-hartzaileari. Horretaz gain, irabazlearen ideia edo lehiaketan parte hartuko duen beste edozeinen ideia komertzializatuko balitz, Jakibe- rri Lan-Taldeak bere proposatzailea saritu egingo luke. Lehiaketari buruz argibideak eskuratzeko ISEAko webgu- nera (www.iseamcc.net) edo ELKAR- BIDE (www.elkarbide.net) webgune sozialera jo daiteke. Bertan lehiake- taren arauaz gain, parte hartzeko galdera-formulategiak aurkitu ahal</p>",
+      "author": "",
+      "title": "Abian da Jakiberri ideia-Lehiaketa, 'Healthy Basque Fast Food' produktu berritzaileak sortzeko asmoz.",
+      "date": "",
+      "img": " "
+    },
+        {
+      "id": "8",
+      "clase": "noticia y2",
+      "onclick": "mas(this)",
+      "cat": "Gertukoak",
+      "catclass": "catHeaderMin horia rounded",
+      "desc": "3 > Vasco-Navarro trenbidearen itxieraren gaineko erakusketa.",
+      "text": "<p>Jakiberri Proiektua, 'Healthy Fast Food' tankerako arin prestatzeko euskal janari berri, naturala, osa- suntsua, anitza eta nutritiboa izango den produktuak lortzeko ikerkuntza proiektua da.</p><p>Jakiberri Proiektuaren asmoa euskal jatorrizko 'Healthy Fast Food' sukal- daritza mota berritzailea sortzea da, Obama Presidentearen legediarekin bat letorkeena.</p><p>Jakiberri Proiektua ISEAk (Corporacion MONDRAGON), JAKIONek eta AZARO FUNDAZIOAk bultzatutakoa da, horre- tarako BASQUE CULINARY CENTER eta HAZI laguntza dutelarik.</p><p>Nahiz eta gaur egun 'Healthy Bas- que Fast Food' eskaintzarik ez egon, Jakiberri Proiektuaren helburua da, gure sormen potentziala, ezagutza, tradizioa eta gure gastronomiako giza kolektiboa uztartzea da eta horrela elikadura mota berria, naturala, osasuntsua, anitza eta nutritiboa lortzeko.</p><p>Jakiberri proiektuaren testuinguruan ideia-lehiaketa bat abian jarri izan da 'Euskal Healthy Fast Food' balizko produktuak aurkitzeko asmoz. 1.000 Euroko sari bat eskainiko zaio propo- samen hoberena aurkeztuko duen parte-hartzaileari. Horretaz gain, irabazlearen ideia edo lehiaketan parte hartuko duen beste edozeinen ideia komertzializatuko balitz, Jakibe- rri Lan-Taldeak bere proposatzailea saritu egingo luke. Lehiaketari buruz argibideak eskuratzeko ISEAko webgu- nera (www.iseamcc.net) edo ELKAR- BIDE (www.elkarbide.net) webgune sozialera jo daiteke. Bertan lehiake- taren arauaz gain, parte hartzeko galdera-formulategiak aurkitu ahal</p>",
+      "author": "",
+      "title": "Vasco-Navarro trenbidearen itxieraren gaineko erakusketa produktu berritzaileak sortzeko asmoz.",
+      "date": "",
+      "img": "<img width='100%' class='imag rounded imgY2' src='./assets/images//tren.jpeg'/>"
+    },
+        {
+      "id": "9",
+      "clase": "noticia",
+      "onclick": "mas(this)",
+      "cat": "Zaletasunak",
+      "catclass": "catHeaderMin berdea rounded",
+      "desc": "2 > EKONOMIA |  IBEX-35 Goraka doa.",
+      "text": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess ecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+      "author": "",
+      "title": "Ekonomia oso gaizki doa.",
+      "date": "",
+      "img": " "
+    }
+  ]
+}

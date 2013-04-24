@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="assets/stylesheets/noticias.css">
   <link rel="stylesheet" href="assets/stylesheets/login.css">
   <link rel="stylesheet" href="assets/stylesheets/mediaQuery.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/bookblock.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="assets/stylesheets/custom.css" /> -->
+  <script src="assets/libraries/modernizr.custom.79639.js"></script>
 <!-- Production mode
   <link rel="stylesheet" href="src/tentu.css">
 -->
@@ -46,14 +49,53 @@
 
     <section id="not" style="display:none;">
       <div id="noticias"></div>
+    </section>
 
+    <section id="age" style="display:none;">
+      <div id="agenda"></div>
     </section>
 
     <footer id="fot">
-      <div id="back" class="back icon" onclick="min();" style="display:none;"><span>&#59154;</span></div>
-      <div class="home" onclick="home();">Tentu</div>
+      <div id="exit" style="float:left;" class="icon">&#10060;</div>
+      <div class="home" onclick="home();"><img src="assets/images/logo_small.svg"></img></div>
       <div class="user icon" onclick="delCookie()"><span>&#128100;</span></div>
     </footer>
+
+    <div id="sw" class="share_wraper swdown"><ul class="share"><li><span class="social_icon">&#62217;</span></li><li><span class="social_icon">&#62220;</span></li><li><span class="social_icon">&#62223;</span></li><li><span class="icon">&#9993;</span></li></ul></div>
+
+    <section id="ext" class="bb-custom-wrapper" style="display:none;">
+      <div id="extendidas" class="bb-bookblock"></div>
+        <footer style="display:block" id="pagination">
+          <span id="back" style="float:left;" class="icon">&#59154;</span>
+          <span id="" style="float:left;color:black;" class="icon">&#59154;</span>
+          <span id="bb-nav-prev" class="icon">&#9666;</span>
+          <div class="home" onclick="backFlip();">
+            <img src="assets/images/logo_small.svg"></img>
+          </div>
+          <span id="bb-nav-next" class="icon">&#9656;</span>
+          <div id="si" style="display:iniline-block;float:right;" class="share_icon">
+            <span class="icon" >&#59196;</span>
+          </div>
+          <div id="night" onclick="night();" style="display:iniline-block;float:right;"class="">
+            <span class="icon" >&#9681;</span>
+          </div>
+          <div id="day" onclick="day();" style="display:none;float:right;"class="">
+            <span class="icon" >&#128262;</span>
+          </div>
+      </footer>
+    </section>
+
+    <section id="age_ext" class="bb-custom-wrapper" style="display:none;">
+      <div id="agenda_ext" class="bb-bookblock"></div>
+        <nav id="pagination">
+          <span id="bb-nav-prev-a">&#9666;</span>
+          <div id="bb-nav-exc" onclick="backFlip();">X</div>
+          <span id="bb-nav-next-a">&#9656;</span>
+      </nav>
+    </section>
+
+
+    </section>
 
 
     <script src="assets/libraries/jquery-1.9.1.js"></script>
@@ -66,5 +108,6 @@
 <!-- Production mode
     <script src="src/tentu.js"></script>
 -->
+    <script src="assets/data/dinCharge.js"></script>
   </body>
 </html>

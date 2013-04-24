@@ -1,0 +1,53 @@
+{
+    "item":[
+        {
+            "clase" : "category gorria doble rounded",
+            "onclick" : "changeSec(0)",
+            "text": "",
+            "author": "",
+            "title": "Nabarmen",
+            "date": "",
+            "img": "<img class='portada bottom rounded' class='bottom' src='./assets/images/libro.jpg'/>"},
+
+        {
+            "clase":"category berdea rounded",
+            "onclick":"changeSec(1);",
+            "text": "<ul><li>Herriko agenda</li><li>Kirolak</li></ul>",
+            "author": "",
+            "title": "Agenda",
+            "date": "",
+            "img": ""
+        },
+        {
+            "clase":"category horia rounded",
+            "onclick":"changeSec(2)",
+            "text": "<ul><li>Herriz herriko berriak</li><li>Administrazioaren berriak</li></ul>",
+            "author": "",
+            "title": "Gertukoak",
+            "date": "",
+            "img": ""},
+        {
+            "clase":"category horia rounded",
+            "onclick":"changeSec(2)",
+            "text": "<ul><li>Herriz herriko berriak</li><li>Administrazioaren berriak</li></ul>",
+            "author": "",
+            "title": "Gertukoak",
+            "date": "",
+            "img": ""   },
+        {
+            "clase":"category grisa rounded",
+            "onclick":"changeSec(4)",
+            "text": "",
+            "author": "",
+            "title": "Publi",
+            "date": "",
+            "img": ""
+        }
+
+    ]
+}
+
+
+
+
+
