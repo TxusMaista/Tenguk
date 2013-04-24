@@ -22,7 +22,7 @@ Services = (function() {
 
             sections.item.push({
                     clase:"category gorria doble rounded",
-                    onclick:"changeSec(0)",
+                    onclick:"Events.changeSec(0)",
                     text: "",
                     author: "",
                     title: "Nabarmen",
@@ -30,10 +30,10 @@ Services = (function() {
                     img: imag
             });
 
-            if(reponse.seccion.categorias.length != 0)
+            if(reponse.categorias.length != 0)
                 sections.item.push({
                     clase:"category urdina rounded",
-                    onclick:"changeSec(1)",
+                    onclick:"Events.changeSec(1)",
                     text: "",
                     author: "",
                     title: "Zaletasunak",
@@ -41,10 +41,10 @@ Services = (function() {
                     img: ""
                 });
 
-            if(reponse.seccion.municipios.length != 0)
+            if(reponse.municipios.length != 0)
                 sections.item.push({
                     clase:"category horia rounded",
-                    onclick:"changeSec(2)",
+                    onclick:"Events.changeSec(2)",
                     text: "",
                     author: "",
                     title: "Gertukoak",
@@ -52,10 +52,10 @@ Services = (function() {
                     img: ""
                 });
 
-            if(reponse.seccion.agenda.length != 0)
+            if((reponse.eventosd.length != 0)||((reponse.eventosg.length != 0)))
                 sections.item.push({
                     clase:"category berdea rounded",
-                    onclick:"changeSec(3)",
+                    onclick:"Events.changeSec(3)",
                     text: "",
                     author: "",
                     title: "Agenda",
@@ -63,72 +63,91 @@ Services = (function() {
                     img: ""
                 });
 
-            for(var i=0;i<response.length;i++){
+            for(var i=0;i<response.noticias.length;i++){
                 var img;
-                if (response.img != "")
+                if (response.noticia[i].image != "")
                     img = false;
                 else
                     img = true;
-                if(response.tipo == "evento")
-                agenda.push({
-                    id: agenda.item.length,
-                    clase:random(img),
-                    onclick:"mas(this);hideAll(this);",
-                    cat:"Agenda",
-                    catclass:"catHeaderMin berdea rounded",
-                    desc: desc("",""),
-                    text: imag + "",
-                    author: "",
-                    title: "",
-                    date: "",
-                    img: ""
-                });
 
-                if((response.tipo == "noticia")&&(response.categorias.lenght != 0)&&(reponse.seccion.categorias.length != 0))
+            if((response.noticias[i].kategoria.length != 0)&&(reponse.categorias.length != 0))
                 zaletasunak.push({
                     id: zaletasunak.item.length,
-                    clase:random(img),
-                    onclick:"mas(this);hideAll(this);",
-                    cat:"Zaletasunak",
+                    clase: random(img),
+                    onclick:"Events.mas(this);Events.hideAll(this);",
+                    cat: response.noticia[i].kategoria,
                     catclass:"catHeaderMin urdina rounded",
-                    desc: desc("",""),
-                    text: imag + "",
-                    author: "",
-                    title: "",
-                    date: "",
-                    img: ""
+                    desc: desc("Zaletasunak",response.noticia[i].kategoria + " | " + response.noticia[i].title),
+                    text: response.noticia[i].image + response.noticia[i].body,
+                    author: response.noticia[i].egilea,
+                    title: response.noticia[i].title,
+                    date: response.noticia[i].publidate,
+                    img: response.noticia[i].image
                 });
 
-                if((response.tipo == "noticia")&&(response.municipios.length != 0)&&(reponse.seccion.municipios.length != 0))
+                if((response.noticias[i].herria.length != 0)&&(reponse.municipios.length != 0))
                 gertukoak.push({
                     id: gertukoak.item.length,
-                    clase:random(img),
-                    onclick:"mas(this);hideAll(this);",
-                    cat:"Gertukoak",
+                    clase: random(img),
+                    onclick:"Events.mas(this);Events.hideAll(this);",
+                    cat: response.noticia[i].kategoria,
                     catclass:"catHeaderMin horia rounded",
-                    desc: desc("",""),
-                    text: imag + "",
-                    author: "",
-                    title: "",
-                    date: "",
-                    img: ""
+                    desc: desc("Gertukoak",response.noticia[i].herria + " | " + response.noticia[i].title),
+                    text: response.noticia[i].image + response.noticia[i].body,
+                    author: response.noticia[i].egilea,
+                    title: response.noticia[i].title,
+                    date: response.noticia[i].publidate,
+                    img: response.noticia[i].image
                 });
 
-                if(response.tipo == "nabarmen")
+                if(true)
                 nabarmen.push({
                     id: nabarmen.item.length,
-                    clase:random(img),
-                    onclick:"mas(this);hideAll(this);",
-                    cat:"",
+                    clase: random(img),
+                    onclick:"Events.mas(this);Events.hideAll(this);",
+                    cat: response.noticia[i].kategoria,
                     catclass:"catHeaderMin horia rounded",
-                    desc: desc("",""),
-                    text: imag + "",
+                    desc: desc("Gertukoak",response.noticia[i].herria + " | " + response.noticia[i].title),
+                    text: response.noticia[i].image + response.noticia[i].body,
+                    author: response.noticia[i].egilea,
+                    title: response.noticia[i].title,
+                    date: response.noticia[i].publidate,
+                    img: response.noticia[i].image
+                });
+            }
+
+            for(var i=0;i<response.eventosg.length;i++){
+                agenda.push({
+                    id: agenda.item.length,
+                    clase: "noticia",
+                    onclick:"Events.mas(this);Events.hideAll(this);",
+                    cat: "Agenda",
+                    catclass:"catHeaderMin berdea rounded",
+                    desc: desc("Agenda",response.eventog[i].herria + " | " + response.eventog[i].description),
+                    text: response.eventog[i].description,
                     author: "",
-                    title: "",
-                    date: "",
+                    title: response.eventog[i].title,
+                    date: response.eventog[i].hasiera + " - " + response.eventog[i].bukaera,
                     img: ""
                 });
             }
+
+            for(var i=0;i<response.eventosd.length;i++){
+                agenda.push({
+                    id: agenda.item.length,
+                    clase: "noticia",
+                    onclick:"Events.mas(this);Events.hideAll(this);",
+                    cat: "Agenda",
+                    catclass:"catHeaderMin berdea rounded",
+                    desc: desc("Agenda",response.eventod[i].herria + " | " + response.eventod[i].title),
+                    text: response.eventod[i].description,
+                    author: "",
+                    title: response.eventod[i].title,
+                    date: response.eventod[i].hasiera + " - " + response.eventod[i].bukaera,
+                    img: ""
+                });
+            }
+
         });
     };
 
@@ -790,10 +809,12 @@ Services = (function() {
     Category();
 
     return {
+        filter: function(){ Fil();},
+        print: function(){ Print();},
         template: function(o){ Templating(o);},
         category: function(){ Category();},
-        Fil: function(){ Fil(); },
-        Print: function(){ Print(); }
+        filter: function(){ Fil(); },
+        print: function(){ Print(); }
     };
 
 

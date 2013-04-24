@@ -203,8 +203,9 @@ Events = (function() {
    */
 
   function main() {
-    Services.Fil();
-    Services.Print();
+
+    Services.filter();
+    Services.print();
     document.getElementById("log").style.display = "none";
     document.getElementById("nab").style.display = "none";
     document.getElementById("zal").style.display = "none";
