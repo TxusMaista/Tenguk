@@ -810,6 +810,8 @@ Services = (function() {
     Category();
 
     return {
+        filter: function(){ Fil();},
+        print: function(){ Print();},
         template: function(o){ Templating(o);},
         category: function(){ Category();}
     };

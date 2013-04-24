@@ -200,8 +200,8 @@ Events = (function() {
    */
 
   function main() {
-    Services.Fill();
-    Services.Print();
+    Services.filter();
+    Services.print();
     document.getElementById("log").style.display = "none";
     document.getElementById("cat").style.display = "none";
     document.getElementById("sec").style.display = "inline-block";
