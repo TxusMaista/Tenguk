@@ -207,6 +207,7 @@ Events = (function() {
     document.getElementById("sec").style.display = "inline-block";
     document.getElementById("logout").style.display = "block";
     document.getElementById("fot").style.display = "block";
+  };
 
   /*
    * Función que muestra el texto de la página de logeo en Euskera o Castellano. Utiliza Lang de lang.js.
