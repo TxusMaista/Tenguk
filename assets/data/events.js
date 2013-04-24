@@ -203,10 +203,11 @@ Events = (function() {
     Services.Fill();
     Services.Print();
     document.getElementById("log").style.display = "none";
-    document.getElementById("cat").style.display = "none";
+    document.getElementById("zal").style.display = "none";
     document.getElementById("sec").style.display = "inline-block";
     document.getElementById("logout").style.display = "block";
     document.getElementById("fot").style.display = "block";
+  };
 
   /*
    * Función que muestra el texto de la página de logeo en Euskera o Castellano. Utiliza Lang de lang.js.
@@ -232,7 +233,7 @@ Events = (function() {
 
   function home() {
     document.getElementById("not").style.display = "none";
-    document.getElementById("cat").style.display = "none";
+    document.getElementById("zal").style.display = "none";
     document.getElementById("sec").style.display = "block";
     document.getElementById("logout").style.display = "block";
     document.getElementById("prev").style.display= 'none';
@@ -272,7 +273,7 @@ Events = (function() {
 
   function changeSec(x,y) {
     document.getElementById("sec").style.display = "none";
-    document.getElementById("cat").style.display = "none";
+    document.getElementById("zal").style.display = "none";
     document.getElementById("not").style.display = "inline-block";
 
     Services.template(x,y);
@@ -292,7 +293,7 @@ Events = (function() {
   function showCatMenu() {
     Services.category();
     document.getElementById("sec").style.display = "none";
-    document.getElementById("cat").style.display = "inline-block";
+    document.getElementById("zal").style.display = "inline-block";
     document.getElementById("logout").style.display = "block";
     document.getElementById("fot").style.display = "block";
 

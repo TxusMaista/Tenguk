@@ -10,18 +10,18 @@ Services = (function() {
 //Funcion que filtra las noticias recibidas del servidor y las divide en los diferentes arrays.
     var Fill = function() {
 
-        var url = 'URL del servicio web';
+        var url = 'resources.json';
         var data = {
             v: '1.0',
             q: encodeURIComponent("http://feeds.weblogssl.com/xataka2"),
-            num: 15,
+            num: 0,
             output: 'json'
         };
 
-        url = url + "?v=" + data.v + "&q=" + data.q + "&num=" + data.num + "&output=" + data.output + "&callback=?";
-
+        //url = url + "?v=" + data.v + "&q=" + data.q + "&num=" + data.num + "&output=" + data.output + "&callback=?";
+        console.log(url);
         $.getJSON(url, function(response) {
-            
+
             sections.item.push({
                     clase:"category gorria doble rounded",
                     onclick:"changeSec(0)",
@@ -78,38 +78,38 @@ Services = (function() {
                     onclick:"mas(this);hideAll(this);",
                     cat:"Agenda",
                     catclass:"catHeaderMin berdea rounded",
-                    desc: desc("","");
-                    text: imag + "";
+                    desc: desc("",""),
+                    text: imag + "",
                     author: "",
                     title: "",
                     date: "",
                     img: ""
                 });
 
-                if(response.tipo == "noticia")&&(response.categorias.lenght != 0)&&(reponse.seccion.categorias.length != 0)
+                if((response.tipo == "noticia")&&(response.categorias.lenght != 0)&&(reponse.seccion.categorias.length != 0))
                 zaletasunak.push({
                     id: zaletasunak.item.length,
                     clase:random(img),
                     onclick:"mas(this);hideAll(this);",
                     cat:"Zaletasunak",
                     catclass:"catHeaderMin urdina rounded",
-                    desc: desc("","");
-                    text: imag + "";
+                    desc: desc("",""),
+                    text: imag + "",
                     author: "",
                     title: "",
                     date: "",
                     img: ""
                 });
 
-                if(response.tipo == "noticia")&&(response.municipios.lenght != 0)&&(reponse.seccion.municipios.length != 0)
+                if((response.tipo == "noticia")&&(response.municipios.lenght != 0)&&(reponse.seccion.municipios.length != 0))
                 gertukoak.push({
                     id: gertukoak.item.length,
                     clase:random(img),
                     onclick:"mas(this);hideAll(this);",
                     cat:"Gertukoak",
                     catclass:"catHeaderMin horia rounded",
-                    desc: desc("","");
-                    text: imag + "";
+                    desc: desc("",""),
+                    text: imag + "",
                     author: "",
                     title: "",
                     date: "",
@@ -123,15 +123,15 @@ Services = (function() {
                     onclick:"mas(this);hideAll(this);",
                     cat:"",
                     catclass:"catHeaderMin horia rounded",
-                    desc: desc("","");
-                    text: imag + "";
+                    desc: desc("",""),
+                    text: imag + "",
                     author: "",
                     title: "",
                     date: "",
                     img: ""
-                }
+                });
             }
-        }
+        });
     }
 
     var Print = function() {
@@ -185,11 +185,12 @@ Services = (function() {
         var r = Math.floor((Math.random()*3)+1);
 
         if (o)
-            switch(r)
+            switch(r){
                 case 1:result = "noticia";;break;
                 case 2:result = "noticia y2";;break;
                 case 3:result = "noticia x2 y4";;break;
                 default:result = "noticia";
+            }
         else
             result = "noticia";
 
@@ -791,7 +792,9 @@ Services = (function() {
 
     return {
         template: function(o){ Templating(o);},
-        category: function(){ Category();}
+        category: function(){ Category();},
+        Fill: function(){ Fill(); },
+        Print: function(){ Print(); }
     };
 
 
