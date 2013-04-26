@@ -224,7 +224,7 @@ Services = (function() {
 
         section.item.push({
             clase:"category gorria doble rounded",
-            onclick:"changeSec(0)",
+            onclick:"Events.changeSec(0)",
             text: "",
             author: "",
             title: "Nabarmen",
@@ -234,7 +234,7 @@ Services = (function() {
 
         section.item.push({
             clase:"category berdea rounded",
-            onclick:"changeSec(1);",
+            onclick:"Events.changeSec(1);",
             text: "<ul><li>Herriko agenda</li><li>Kirolak</li></ul>",
             author: "",
             title: "Agenda",
@@ -291,47 +291,47 @@ Services = (function() {
         default:
           break;
         }
-        var K2 = "<img width='100%' class='imag rounded imgY2' src='./assets/images/K2.jpg'/>";
-        var K2x = "<img width='100%' src='./assets/images/K2.jpg'/>";
-        var K3 = "<img width='100%' class='imag rounded imgY2' src='./assets/images/K3.jpg'/>";
-        var K3x = "<img width='100%' src='./assets/images/K3.jpg'/>";
-        var K4 = "<img width='100%' class='imag rounded imgY2' src='./assets/images/K4.jpg'/>";
-        var K4x = "<img width='100%' src='./assets/images/K4.jpg'/>";
-        var K5 = "<img width='100%' class='imag rounded imgY4' src='./assets/images/K5.jpg'/>";
-        var K5x = "<img width='100%' src='./assets/images/K5.jpg'/>";
-        var K6 = "<img width='100%' class='imag rounded imgY2' src='./assets/images/K6.jpg'/>";
-        var K6x = "<img width='100%' src='./assets/images/K6.jpg'/>";
-        var K7 = "<img width='100%' class='imag rounded imgY2' src='./assets/images/K7.jpg'/>";
-        var K7x = "<img width='100%' src='./assets/images/K7.jpg'/>";
-        var K8 = "<img width='100%' class='imag rounded imgY2' src='./assets/images/K8.jpg'/>";
-        var K8x = "<img width='100%' src='./assets/images/K8.jpg'/>";
+        var K2 = "<img width='100%' class='imag roundedMin imgY2' src='./assets/images/K2.jpg'/>";
+        var K2x = "<img width='100%' class='rounded' src='./assets/images/K2.jpg'/>";
+        var K3 = "<img width='100%' class='imag roundedMin imgY2' src='./assets/images/K3.jpg'/>";
+        var K3x = "<img width='100%' class='rounded' src='./assets/images/K3.jpg'/>";
+        var K4 = "<img width='100%' class='imag roundedMin imgY2' src='./assets/images/K4.jpg'/>";
+        var K4x = "<img width='100%' class='rounded' src='./assets/images/K4.jpg'/>";
+        var K5 = "<img width='100%' class='imag roundedMin imgY4' src='./assets/images/K5.jpg'/>";
+        var K5x = "<img width='100%' class='rounded' src='./assets/images/K5.jpg'/>";
+        var K6 = "<img width='100%' class='imag roundedMin imgY2' src='./assets/images/K6.jpg'/>";
+        var K6x = "<img width='100%' class='rounded' src='./assets/images/K6.jpg'/>";
+        var K7 = "<img width='100%' class='imag roundedMin imgY2' src='./assets/images/K7.jpg'/>";
+        var K7x = "<img width='100%' class='rounded' src='./assets/images/K7.jpg'/>";
+        var K8 = "<img width='100%' class='imag roundedMin imgY2' src='./assets/images/K8.jpg'/>";
+        var K8x = "<img width='100%' class='rounded' src='./assets/images/K8.jpg'/>";
 
         var img = "http://goiena.net/site_media/photologue/photos/cache/JuanLuisZabalanet_display.jpg";
-        imag1 = "<img width='100%' class='imag rounded imgY2' src='"+img+"'/>";
-        imagx1 = "<img width='100%' src='"+img+"'/>";
+        imag1 = "<img width='100%' class='imag roundedMin imgY2' src='"+img+"'/>";
+        imagx1 = "<img width='100%' class='rounded' src='"+img+"'/>";
         var img = "http://goiena.net/site_media/photologue/photos/cache/8-AzaitzUnanue-8091ona_display.jpg";
-        imag2 = "<img width='100%' class='imag rounded imgY4' src='"+img+"'/>";
-        imagx2 = "<img width='100%' src='"+img+"'/>";
+        imag2 = "<img width='100%' class='imag roundedMin imgY4' src='"+img+"'/>";
+        imagx2 = "<img width='100%' class='rounded' src='"+img+"'/>";
         var img = "http://goiena.net/site_media/photologue/photos/cache/VerdaguerBarrua_display.jpg";
-        imag3 = "<img width='100%' class='imag rounded imgY2' src='"+img+"'/>";
-        imagx3 = "<img width='100%' src='"+img+"'/>";
+        imag3 = "<img width='100%' class='imag roundedMin imgY2' src='"+img+"'/>";
+        imagx3 = "<img width='100%' class='rounded' src='"+img+"'/>";
         var img = "http://goiena.net/site_media/photologue/photos/cache/17-JesusElortza2_display.JPG";
-        imag4 = "<img width='100%' class='imag rounded imgY2' src='"+img+"'/>";
-        imagx4 = "<img width='100%' src='"+img+"'/>";
+        imag4 = "<img width='100%' class='imag roundedMin imgY2' src='"+img+"'/>";
+        imagx4 = "<img width='100%' class='rounded' src='"+img+"'/>";
         var img = "http://goiena.net/site_media/photologue/photos/cache/Imagen%201_353_display.png";
-        imag5 = "<img width='100%' class='imag rounded imgY4' src='"+img+"'/>";
-        imagx5 = "<img width='100%' src='"+img+"'/>";
+        imag5 = "<img width='100%' class='imag roundedMin imgY4' src='"+img+"'/>";
+        imagx5 = "<img width='100%' class='rounded' src='"+img+"'/>";
         var img = "http://goiena.net/site_media/photologue/photos/cache/bergara%20garbia%20barru_display.jpg";
-        imag6 = "<img width='100%' class='imag rounded imgY2' src='"+img+"'/>";
-        imagx6 = "<img width='100%' src='"+img+"'/>";
+        imag6 = "<img width='100%' class='imag roundedMin imgY2' src='"+img+"'/>";
+        imagx6 = "<img width='100%' class='rounded' src='"+img+"'/>";
         var img = "http://goiena.net/site_media/photologue/photos/cache/P1013241_display.JPG";
-        imag7 = "<img width='100%' class='imag rounded imgY2' src='"+img+"'/>";
-        imagx7 = "<img width='100%' src='"+img+"'/>";
+        imag7 = "<img width='100%' class='imag roundedMin imgY2' src='"+img+"'/>";
+        imagx7 = "<img width='100%' class='rounded' src='"+img+"'/>";
 
         section.item.push({
-            id:'1',
+            id:'0',
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","KIROLAK | Aurrera doa Eskoriatzako Osasun Astea"),
@@ -343,9 +343,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id:'2',
+            id:'1',
             clase:"noticia y2",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","KIROLAK | Udaberrirako ekintza berria gimnasioan"),
@@ -357,9 +357,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id:'3',
+            id:'2',
             clase:"noticia y2",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","KIROLAK | Galiziara, kenpo borrokaldira"),
@@ -371,9 +371,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id:'4',
+            id:'3',
             clase:"noticia y2",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","KIROLAK | Irteeraz betetako apirila Pol-Pol mendi taldearen eskutik"),
@@ -385,9 +385,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id:'5',
+            id:'4',
             clase:"noticia x2 y4",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","KIROLAK | Beñat Rezustak garaipenarekin hasi du Bergara Hiria pilota txapelketa"),
@@ -399,9 +399,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id:'6',
+            id:'5',
             clase:"noticia y2",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","KIROLAK | Aramaioarrak laugarren Euskadiko Zirkuituko txapelketan"),
@@ -413,9 +413,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id:'7',
+            id:'6',
             clase:"noticia y2",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","KIROLAK | Abian da Eskoriatzako Osasun Astea"),
@@ -427,9 +427,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id:'8',
+            id:'7',
             clase:"noticia y2",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","KIROLAK | Abian da Eskoriatzako Osasun Astea"),
@@ -441,9 +441,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Gertukoak",
             catclass:"catHeaderMin horia rounded",
             desc: desc("Gertukoak",'LEINTZ GATZAGA | Juan Luis Zabala: "Konposta euren kabuz egiten dutenek %25eko hobaria izango dute fakturetan"'),
@@ -455,9 +455,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id: section.item.length + 1 ,
+            id: section.item.length,
             clase:"noticia x2 y4",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Gertukoak",
             catclass:"catHeaderMin horia rounded withImg",
             desc: desc("Gertukoak",'BERGARA | Azaitz Unanue: "Frakinga erabilita beste energia jasangarriago batzuetarako trantsizioa atzeratzen gabiltza"'),
@@ -469,9 +469,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Gertukoak",
             catclass:"catHeaderMin horia rounded",
             desc: desc("Gertukoak",'BERGARA | Lluis Verdaguer, Bartzelonako Taradell herriko alkatea (CIU): "Edukiontzien sistemarekin ezin zaitezke iritsi hiri hondakin guztien %80 birziklatzera"'),
@@ -483,9 +483,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Gertukoak",
             catclass:"catHeaderMin horia rounded",
             desc: desc("Gertukoak",'BERGARA | Jesus Elortza: "Lasaitasun mezua igorri nahi diet herritarrei"'),
@@ -497,9 +497,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia x2 y4",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Gertukoak",
             catclass:"catHeaderMin horia rounded withImg",
             desc: desc("Gertukoak","ELGETA | Hasita daude etxeko konpostagailuen egoera eta funtzionamendua ikuskatzeko etxez etxeko bisitak"),
@@ -511,9 +511,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Gertukoak",
             catclass:"catHeaderMin horia rounded",
             desc: desc("Gertukoak","BERGARA | Gaur aterako dira kalera atez atekoaren kontra, Bergaran"),
@@ -525,9 +525,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Gertukoak",
             catclass:"catHeaderMin horia rounded",
             desc: desc("Gertukoak",'BERGARA | Sortu: "Atez atekoaren aurkako dinamikaren buru EAJ ageri zaigu Gipuzkoan Garbia plataformen eskutik"'),
@@ -539,9 +539,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia y2",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Gertukoak",
             catclass:"catHeaderMin horia rounded withImg",
             desc: desc("Gertukoak","BERGARA | Dolmenen ibilbidea aurkeztu dute"),
@@ -553,9 +553,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat: "Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","EKONOMIA | Fagor Brandt-eko zuzendari izan denak hartu du Fabian Bilbaoren lekukoa."),
@@ -564,13 +564,13 @@ Services = (function() {
             author: "Leire Kortabarria",
             title: "Fagor Brandt-eko zuzendari izan denak hartu du Fabian Bilbaoren lekukoa",
             date: "Api. 12, 2013, gauerdia",
-            img: "<img width='100%' class='imag rounded imgY2' src='http://goiena.net/site_media/photologue/photos/cache/SergioTrevin%CC%83o_display.jpg'/>"
+            img: "<img width='100%' class='imag roundedMin imgY2' src='http://goiena.net/site_media/photologue/photos/cache/SergioTrevin%CC%83o_display.jpg'/>"
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","EKONOMIA | Positiboan itxi du 2012a Elgetako Udalak."),
@@ -579,13 +579,13 @@ Services = (function() {
             author: "Larraitz Zeberio",
             title: "Positiboan itxi du 2012a Elgetako Udalak",
             date: "Api. 11, 2013, 9 p.m.",
-            img: "<img width='100%' class='imag rounded imgY2' src='http://goiena.net/site_media/photologue/photos/cache/Imagen%202_203_display.png'>"
+            img: "<img width='100%' class='imag roundedMin imgY2' src='http://goiena.net/site_media/photologue/photos/cache/Imagen%202_203_display.png'>"
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","EKONOMIA | \"Behar ez dugunetik murrizteko\" eskatu du AHT gelditu! plataformak"),
@@ -594,13 +594,13 @@ Services = (function() {
             author: "Imanol Gallego",
             title: "\"Behar ez dugunetik murrizteko\" eskatu du AHT gelditu! plataformak",
             date: "Api. 10, 2013, 8:20 p.m",
-            img: "<img width='100%' class='imag rounded imgY2' src='http://goiena.net/site_media/photologue/photos/cache/Captura%20de%20pantalla%202013-04-10%20a%20las%2020.17.11_display.jpg'>"
+            img: "<img width='100%' class='imag roundedMin imgY2' src='http://goiena.net/site_media/photologue/photos/cache/Captura%20de%20pantalla%202013-04-10%20a%20las%2020.17.11_display.jpg'>"
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","EKONOMIA | Eredu gizatiarrago baten aldeko mezua bidali zuten Ibarretxek, Pagolak eta Sarasuak atzo Oñatin"),
@@ -609,13 +609,13 @@ Services = (function() {
             author: "Leire Kortarria",
             title: "Eredu gizatiarrago baten aldeko mezua bidali zuten Ibarretxek, Pagolak eta Sarasuak atzo Oñatin",
             date: "Api. 10, 2013, 10:06 a.m.",
-            img: "<img width='100%' class='imag rounded imgY2' src='http://goiena.net/site_media/photologue/photos/cache/P1200022_display.JPG'>"
+            img: "<img width='100%' class='imag roundedMin imgY2' src='http://goiena.net/site_media/photologue/photos/cache/P1200022_display.JPG'>"
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","EKONOMIA | Biztanleen %44k ez dute hiru hilabeteko gastuak ordaintzeko adina diru"),
@@ -628,9 +628,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","EKONOMIA | Arrasateko Canas Esteban enpresako langileak greban"),
@@ -639,13 +639,13 @@ Services = (function() {
             author: "Jagoba Domingo",
             title: "Arrasateko Canas Esteban enpresako langileak greban",
             date: "Api. 9, 2013, 12:53 p.m.",
-            img: "<img width='100%' class='imag rounded imgY2' src='http://goiena.net/site_media/photologue/photos/cache/P1010499%20copia_display.JPG'>"
+            img: "<img width='100%' class='imag roundedMin imgY2' src='http://goiena.net/site_media/photologue/photos/cache/P1010499%20copia_display.JPG'>"
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","EKONOMIA | Arrisku handiko finantza-produktuek kaltetutakoendako erreklamazio-formularioa sortu du Kontsumobidek"),
@@ -658,9 +658,9 @@ Services = (function() {
         });
 
         section.item.push({
-            id: section.item.length + 1,
+            id: section.item.length,
             clase:"noticia",
-            onclick:"mas(this);hideAll(this);",
+            onclick:"Events.mas(this);Events.hideAll(this);",
             cat:"Zaletasunak",
             catclass:"catHeaderMin urdina rounded",
             desc: desc("Zaletasunak","EKONOMIA | Autoenplegu saioak eta tailerrak deitu ditu Mankomunitateak"),
@@ -681,7 +681,9 @@ Services = (function() {
         $('#not').prepend(header);
         $('#noticias').html(html);
 
-        document.getElementsByTagName("body")[0].style.backgroundColor = "#f4f5f5";
+        //document.getElementsByTagName("body")[0].style.backgroundColor = "#f4f5f5";
+        document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(220,220,220)";
+
 
 
         $('#noticias').masonry({

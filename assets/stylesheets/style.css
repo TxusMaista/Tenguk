@@ -13,7 +13,14 @@ html{
 
 @font-face {
   font-family: 'icons';
-  src: url(../entypo.ttf) format('truetype');
+  src: url('../entypo.ttf') format('truetype'),
+       url('../entypo.eot'); /* IE9 */
+}
+
+@font-face {
+  font-family: 'social_icons';
+  src: url(../Entypo-Social.ttf) format('truetype'),
+    url('../entypo-social.eot'); /* IE9 */
 }
 
 body {
@@ -38,11 +45,13 @@ input{
 }
 
 footer{
+  z-index: 100;
   display: none;
   position: fixed;
   bottom: 0px;
   height: 44px;
   background-color: #2b2a2b;
+  background-color: black;
   border-top: 1px solid black;
   width: 100%;
   color: white;
@@ -52,7 +61,7 @@ footer{
 
 .icon{
   margin: 0 5px 0 5px;
-  font-size: 4.5em;
+  font-size: 3.5em;
   font-family: 'icons';
 }
 
@@ -104,6 +113,9 @@ footer .next{
 .marroia{ background-color: rgb(194, 141, 77); }
 .txuria{ background-color: rgb(255, 255, 255); }
 
+.noticia.rounded{ border-radius: 0 0 5px 5px;}
+.portada.rounded{ border-radius: 0 0 5px 5px;}
+.roundedMin{ border-radius: 5px 5px 0 0;}
 .rounded{ border-radius: 5px;}
 .bottom{position: absolute;bottom: 0px;}
 .top{position: absolute;top: 0px;}
@@ -132,3 +144,104 @@ footer .next{
        -o-transition-property: left, right, top;
           transition-property: left, right, top;
 }
+
+.social_icon{
+  margin: 0 5px 0 5px;
+  font-size: 2.5em;
+  font-family: 'social_icons';
+}
+.share_icon{
+  display:inline-block;
+  float:right;
+}
+
+.share_wraper{
+right:0;
+text-align:center;
+position:fixed;
+bottom:0;
+z-index:99;
+/*transition*/
+-webkit-transition:bottom 1s;
+   -moz-transition:bottom 1s;
+    -ms-transition:bottom 1s;
+     -o-transition:bottom 1s;
+        transition:bottom 1s;
+background:black;
+margin:5px;
+padding:5px 5px 1px;
+width:32px;
+/*border-radius*/
+-webkit-border-radius:4px;
+   -moz-border-radius:4px;
+    -ms-border-radius:4px;
+     -o-border-radius:4px;
+        border-radius:4px;
+}
+
+.swdown{
+  bottom: -220px;
+}
+.swup{
+  bottom: 45px;
+}
+
+ul .share{
+  list-style: none;
+  width: 32px;
+  color: white;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+.share span{
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+footer .night{
+  float: right;
+  display:none;
+}
+
+
+footer .day{
+  float: right;
+  display:none;
+}
+
+.publi_tit{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: blue;
+  text-decoration: underline;
+}
+
+.enlace{
+  color: green;
+  /*text-decoration: underline;*/
+}
+
+.publi{
+  border-radius: 5px;
+  border: 4px solid rgb(0, 137, 193);
+  float: left;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  background-color: white;
+  min-width: 270px;
+  width: 280px;
+  margin: 10px;
+  color: black;
+  text-align: left;
+  font-size: 18px;
+}
+
+

@@ -44,8 +44,9 @@
   overflow: hidden;
 
   background-color: white;
-  padding: 10px;
+
   border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgb(200,200,200);
 
   min-width: 270px;
   width: 280px;
@@ -54,12 +55,16 @@
   color:black;
   text-align:left;
   font-size: 18px;
+  border-radius: 5px;
+}
 
+.desc{
+  padding: 10px;  
 }
 
 .portada{
   width: 100%;
-  height: 310px;
+  height: 320px;
 }
 
 .catHeaderMin h1{display:none;padding:5px 0px;margin:0px 15px;color: white;font-size:20px;text-align:left;text-shadow:2px 5px 2px rgba(0, 0, 0, 0.3);}
@@ -84,14 +89,14 @@
 }
 
 .catHeader{width:98%;margin:0px 1%;}
-.catHeader h1{padding:5px 0px;margin:5px 15px;color: white;font-size:40px;text-align:left;text-shadow:2px 5px 2px rgba(0, 0, 0, 0.3);}
+.catHeader h1{padding:5px 0px;margin:5px 15px;color: white;font-size:30px;text-align:left;text-shadow:2px 5px 2px rgba(0, 0, 0, 0.3);}
 
 .doble{height: 660px;}
 
-.x2{width: 572px;font-size: 22px;}
+.x2{width: 570px;font-size: 18px;}
 
-.imgY2{margin-bottom: 10px;}
-.imgY4{margin-bottom: 10px;}
+.imgY2{margin-bottom: 0px;}
+.imgY4{margin-bottom: 0px;}
 
 .noticia.centerLeft{
   -webkit-animation-name: centerLeft;
